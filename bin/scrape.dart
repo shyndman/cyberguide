@@ -140,13 +140,20 @@ String createRootIndex() {
     ''';
   }
 
+  final teacherUnits =
+      units.where((u) => u.type == UnitType.teacher).map(unitHtml);
+  final teacherGrade7Units = teacherUnits.take(4);
+  final teacherGrade8Units = teacherUnits.skip(4).take(4);
+
   return createPageHtml(
     title: 'Perspectives « Sciences « Ressources en français « Duval Éducation',
     content: '''
       <h2>Sciences — Perspectives</h2>
       <div class="teacher-units">
         <h3>Cyberguides</h3>
-        ${units.where((u) => u.type == UnitType.teacher).map(unitHtml).join('\n')}
+        ${teacherGrade7Units.join('\n')}
+        <div style="height: 1rem"></div>
+        ${teacherGrade8Units.join('\n')}
       </div>
       <div class="student-units" style="margin-top: 1rem;">
         <h3>Cyberliens</h3>
