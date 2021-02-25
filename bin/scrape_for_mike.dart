@@ -88,12 +88,14 @@ class Unit {
   final UnitType type;
 }
 
+const outputDirName = 'docs';
+
 final xmlPattern = RegExp(r'^.*\.xml$', multiLine: true);
 
 final http = HttpClient();
 
 void main(List<String> arguments) async {
-  final buildDir = Directory('./build');
+  final buildDir = Directory('./$outputDirName');
   // if (buildDir.existsSync()) {
   //   buildDir.deleteSync(recursive: true);
   // }
@@ -261,7 +263,7 @@ Future<DocNode> parseDocTree(
 }
 
 Future<void> writeUnitPackage(String unit, DocNode rootDocNode) async {
-  final unitDir = Directory('build/$unit')..createSync(recursive: true);
+  final unitDir = Directory('$outputDirName/$unit')..createSync(recursive: true);
   final assetsDir = Directory('${unitDir.path}/assets')..createSync();
   final indexFile = File('${unitDir.path}/index.html')..createSync();
 
