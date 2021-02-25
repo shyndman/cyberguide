@@ -391,7 +391,7 @@ String createPageHtml({required String title, required String content}) {
 
         h2 {
           font-size: 2.3rem;
-          margin-top: 1.4rem;
+          margin-top: 2.4rem;
           margin-bottom: 0.6rem;
         }
 
@@ -418,7 +418,7 @@ String createPageHtml({required String title, required String content}) {
         }
 
         p + h4 {
-          margin-top: 1.2rem;
+          margin-top: 2rem;
         }
 
         p {
