@@ -11,7 +11,7 @@
       "args": [
         "--no-sound-null-safety"
       ],
-      "program": "bin/scrape_for_mike.dart",
+      "program": "bin/scrape.dart",
     }
   ]
 }
