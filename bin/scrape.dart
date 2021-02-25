@@ -186,7 +186,7 @@ String createRootIndex() {
         }
       </style>
 
-      <img class="branding-image" src="brand/1.jpg">
+      <img class="branding-image" src="brand/1.jpg?bust">
       <h2>Sciences — Perspectives</h2>
       <div class="teacher-units">
         <h3>Cyberguides</h3>
