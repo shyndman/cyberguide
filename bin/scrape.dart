@@ -69,36 +69,17 @@ final units = [
   ),
 ];
 
-enum UnitType {
-  teacher,
-  student,
-}
-
-class Unit {
-  Unit({
-    required this.id,
-    required this.bookName,
-    required this.description,
-    required this.type,
-  });
-
-  final String id;
-  final String bookName;
-  final String description;
-  final UnitType type;
-}
-
-const outputDirName = 'docs';
-
-final xmlPattern = RegExp(r'^.*\.xml$', multiLine: true);
+const clean = false;
 
 final http = HttpClient();
+const outputDirName = 'docs';
+final xmlPattern = RegExp(r'^.*\.xml$', multiLine: true);
 
 void main(List<String> arguments) async {
   final buildDir = Directory('./$outputDirName');
-  // if (buildDir.existsSync()) {
-  //   buildDir.deleteSync(recursive: true);
-  // }
+  if (clean && buildDir.existsSync()) {
+    buildDir.deleteSync(recursive: true);
+  }
 
   // Build index
 
@@ -138,7 +119,6 @@ void main(List<String> arguments) async {
 
     print(swfUrl);
     print(swfFile.absolute.path);
-    print(xmlPaths);
     print(xmlUrls);
 
     final rootDocNode = await parseDocTree(unit, xmlUrls, swfUrl, swfDir);
@@ -263,7 +243,8 @@ Future<DocNode> parseDocTree(
 }
 
 Future<void> writeUnitPackage(String unit, DocNode rootDocNode) async {
-  final unitDir = Directory('$outputDirName/$unit')..createSync(recursive: true);
+  final unitDir = Directory('$outputDirName/$unit')
+    ..createSync(recursive: true);
   final assetsDir = Directory('${unitDir.path}/assets')..createSync();
   final indexFile = File('${unitDir.path}/index.html')..createSync();
 
@@ -496,6 +477,25 @@ class DocNode {
     child.parent = this;
     children.add(child);
   }
+}
+
+enum UnitType {
+  teacher,
+  student,
+}
+
+class Unit {
+  Unit({
+    required this.id,
+    required this.bookName,
+    required this.description,
+    required this.type,
+  });
+
+  final String id;
+  final String bookName;
+  final String description;
+  final UnitType type;
 }
 
 extension IterableToMap<K, V> on Iterable<MapEntry<K, V>> {
