@@ -286,13 +286,9 @@ String nodeToHtml(DocNode node, {required int level}) {
       final id = Slugify(node.label);
       final idAttr = headingLevel < 5 ? ' id="$id"' : '';
 
-      final words = node.label.split(' ').toList();
-      final leadingWords = words.sublist(0, words.length - 1).join(' ');
-      final lastWord = words.last;
-
       sb.writeln('''
         <h$headingLevel$idAttr>
-          $leadingWords <span class="last-word">$lastWord<a class="anchor-link" href="#$id"></a></span>
+          <a class="anchor-link" href="#$id"></a> ${node.label}
         </h$headingLevel>
       ''');
     } else if (headingLevel <= 5) {
@@ -409,28 +405,30 @@ String createPageHtml({required String title, required String content}) {
           margin-bottom: 0.2rem;
         }
 
-        .last-word {
-          white-space: nowrap;
+        h2,
+        h3,
+        h4 {
+          display: flex;
+          margin-left: -24px;
+          align-items: center;
         }
 
-        h1 > .last-word > .anchor-link,
-        h2 > .last-word > .anchor-link,
-        h3 > .last-word > .anchor-link,
-        h4 > .last-word > .anchor-link,
-        h5 > .last-word > .anchor-link {
+        h2 > .anchor-link,
+        h3 > .anchor-link,
+        h4 > .anchor-link,
+        h5 > .anchor-link {
           display: inline-block;
           width: 16px;
           height: 16px;
-          margin-left: 8px;
-          vertical-align: middle;
+          margin-right: 8px;
           color: #0a0a0a;
         }
 
-        h1:hover > .last-word > .anchor-link,
-        h2:hover > .last-word > .anchor-link,
-        h3:hover > .last-word > .anchor-link,
-        h4:hover > .last-word > .anchor-link,
-        h5:hover > .last-word > .anchor-link {
+        h1:hover > .anchor-link,
+        h2:hover > .anchor-link,
+        h3:hover > .anchor-link,
+        h4:hover > .anchor-link,
+        h5:hover > .anchor-link {
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
         }
 
