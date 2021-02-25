@@ -148,6 +148,45 @@ String createRootIndex() {
   return createPageHtml(
     title: 'Perspectives « Sciences « Ressources en français « Duval Éducation',
     content: '''
+      <style>
+        h1, h2, h3, h4, h5 {
+          margin-left: 0;
+        }
+
+        .grid-container {
+          position: relative;
+          padding-bottom: 3rem;
+        }
+
+        .branding-image {
+          position: absolute;
+          right: .9375rem;
+          height: 100%;
+
+          transition: opacity 100ms ease-in-out;
+        }
+
+        .units {
+          display: inline-block;
+        }
+
+        @media (max-width: 880px) {
+          .branding-image {
+            opacity: 0.2;
+          }
+        }
+
+        @media (max-width: 520px) {
+          .branding-image {
+            left: 0.3rem;
+            right: 0.3rem;
+            width: calc(100% - 0.3rem * 2);
+            height: auto;
+          }
+        }
+      </style>
+
+      <img class="branding-image" src="brand/1.jpg">
       <h2>Sciences — Perspectives</h2>
       <div class="teacher-units">
         <h3>Cyberguides</h3>
@@ -353,6 +392,7 @@ String createPageHtml({required String title, required String content}) {
   return '''
   <!doctype html>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <html>
     <head>
       <title>$title</title>
