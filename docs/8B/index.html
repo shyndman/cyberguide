@@ -9,27 +9,6 @@
           padding-bottom: 3rem;
         }
 
-        h1 > a,
-        h2 > a,
-        h3 > a,
-        h4 > a,
-        h5 > a {
-          display: inline-block;
-          color: #0a0a0a;
-        }
-
-        h1:hover > .anchor-link,
-        h2:hover > .anchor-link,
-        h3:hover > .anchor-link,
-        h4:hover > .anchor-link,
-        h5:hover > .anchor-link {
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
-          width: 16px;
-          height: 16px;
-          margin-left: 8px;
-          vertical-align: middle;
-        }
-
         h1 {
           font-weight: 300;
           text-align: center;
@@ -39,7 +18,7 @@
 
         h2 {
           font-size: 2.3rem;
-          margin-top: 1.4rem;
+          margin-top: 2.4rem;
           margin-bottom: 0.6rem;
         }
 
@@ -66,11 +45,36 @@
         }
 
         p + h4 {
-          margin-top: 2.6rem;
+          margin-top: 2rem;
         }
 
         p {
           margin-bottom: 0.2rem;
+        }
+
+        .last-word {
+          white-space: nowrap;
+        }
+
+        h1 > .last-word > .anchor-link,
+        h2 > .last-word > .anchor-link,
+        h3 > .last-word > .anchor-link,
+        h4 > .last-word > .anchor-link,
+        h5 > .last-word > .anchor-link {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+          vertical-align: middle;
+          color: #0a0a0a;
+        }
+
+        h1:hover > .last-word > .anchor-link,
+        h2:hover > .last-word > .anchor-link,
+        h3:hover > .last-word > .anchor-link,
+        h4:hover > .last-word > .anchor-link,
+        h5:hover > .last-word > .anchor-link {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
         }
 
         @media print, screen and (max-width: 40em) {
@@ -107,15 +111,15 @@
         <h1>Sciences et technologie - Perspectives 8B</h1>
 
         <h2 id="sciences-et-technologie-perspectives-8-survol">
-          Sciences et technologie Perspectives 8 Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-8-survol"></a>
+          Sciences et technologie Perspectives 8 <span class="last-word">Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-8-survol"></a></span>
         </h2>
       
         <h3 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h3>
       
         <h4 id="introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education">
-          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a>
+          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -124,7 +128,7 @@
 
 
         <h4 id="comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education">
-          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a>
+          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -133,7 +137,7 @@
 
 
         <h4 id="composantes-de-perspectives">
-          Composantes de Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a>
+          Composantes de <span class="last-word">Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -142,7 +146,7 @@
 
 
         <h4 id="presentation-de-la-ressource">
-          Présentation de la ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a>
+          Présentation de la <span class="last-word">ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -155,15 +159,15 @@
 
 
         <h2 id="unite-b-plans-de-lecons">
-          Unité B Plans de leçons<a class="anchor-link" href="#unite-b-plans-de-lecons"></a>
+          Unité B Plans de <span class="last-word">leçons<a class="anchor-link" href="#unite-b-plans-de-lecons"></a></span>
         </h2>
       
         <h3 id="introduction">
-          Introduction<a class="anchor-link" href="#introduction"></a>
+           <span class="last-word">Introduction<a class="anchor-link" href="#introduction"></a></span>
         </h3>
       
         <h4 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -172,7 +176,7 @@
 
 
         <h4 id="concordance-avec-le-curriculum">
-          Concordance avec  le curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a>
+          Concordance avec  le <span class="last-word">curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -181,7 +185,7 @@
 
 
         <h4 id="planification-de-lunite">
-          Planification de l'unité<a class="anchor-link" href="#planification-de-lunite"></a>
+          Planification de <span class="last-word">l'unité<a class="anchor-link" href="#planification-de-lunite"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -194,7 +198,7 @@
 
 
         <h4 id="materiel">
-          Matériel<a class="anchor-link" href="#materiel"></a>
+           <span class="last-word">Matériel<a class="anchor-link" href="#materiel"></a></span>
         </h4>
       
 <h5>Guide d'enseignement </h5>
@@ -203,7 +207,7 @@
 
 
         <h4 id="introduction">
-          Introduction <a class="anchor-link" href="#introduction"></a>
+          Introduction <span class="last-word"><a class="anchor-link" href="#introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -239,11 +243,11 @@
 
 
         <h3 id="chapitre-4-la-cellule--unite-de-base-de-la-vie">
-          Chapitre 4 La cellule : unité de base de la vie<a class="anchor-link" href="#chapitre-4-la-cellule--unite-de-base-de-la-vie"></a>
+          Chapitre 4 La cellule : unité de base de la <span class="last-word">vie<a class="anchor-link" href="#chapitre-4-la-cellule--unite-de-base-de-la-vie"></a></span>
         </h3>
       
         <h4 id="chapitre-4--introduction">
-          Chapitre 4 : Introduction<a class="anchor-link" href="#chapitre-4--introduction"></a>
+          Chapitre 4 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-4--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -274,7 +278,7 @@
 
 
         <h4 id="41-les-caracteristiques-des-etres-vivants">
-          4.1 Les caractéristiques des êtres vivants<a class="anchor-link" href="#41-les-caracteristiques-des-etres-vivants"></a>
+          4.1 Les caractéristiques des êtres <span class="last-word">vivants<a class="anchor-link" href="#41-les-caracteristiques-des-etres-vivants"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -295,7 +299,7 @@
 
 
         <h4 id="42-la-nature-des-cellules--la-theorie-cellulaire">
-          4.2 La nature des cellules : la théorie cellulaire<a class="anchor-link" href="#42-la-nature-des-cellules--la-theorie-cellulaire"></a>
+          4.2 La nature des cellules : la théorie <span class="last-word">cellulaire<a class="anchor-link" href="#42-la-nature-des-cellules--la-theorie-cellulaire"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -316,7 +320,7 @@
 
 
         <h4 id="43-le-microscope-optique">
-          4.3 Le microscope optique<a class="anchor-link" href="#43-le-microscope-optique"></a>
+          4.3 Le microscope <span class="last-word">optique<a class="anchor-link" href="#43-le-microscope-optique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -337,7 +341,7 @@
 
 
         <h4 id="44-realise-une-activite--explore-le-microscope">
-          4.4 Réalise une activité : Explore le microscope<a class="anchor-link" href="#44-realise-une-activite--explore-le-microscope"></a>
+          4.4 Réalise une activité : Explore le <span class="last-word">microscope<a class="anchor-link" href="#44-realise-une-activite--explore-le-microscope"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -366,7 +370,7 @@
 
 
         <h4 id="45-les-cellules-vegetales-et-les-cellules-animales">
-          4.5 Les cellules végétales et les cellules animales<a class="anchor-link" href="#45-les-cellules-vegetales-et-les-cellules-animales"></a>
+          4.5 Les cellules végétales et les cellules <span class="last-word">animales<a class="anchor-link" href="#45-les-cellules-vegetales-et-les-cellules-animales"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -399,7 +403,7 @@
 
 
         <h4 id="46-realise-une-activite--compare-des-cellules-vegetales-et-des-cellules-animales">
-          4.6 Réalise une activité : Compare des cellules végétales et des cellules animales<a class="anchor-link" href="#46-realise-une-activite--compare-des-cellules-vegetales-et-des-cellules-animales"></a>
+          4.6 Réalise une activité : Compare des cellules végétales et des cellules <span class="last-word">animales<a class="anchor-link" href="#46-realise-une-activite--compare-des-cellules-vegetales-et-des-cellules-animales"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -436,7 +440,7 @@
 
 
         <h4 id="47-prononce-toi-sur-un-enjeu--le-depistage-genetique">
-          4.7 Prononce-toi sur un enjeu : Le dépistage génétique<a class="anchor-link" href="#47-prononce-toi-sur-un-enjeu--le-depistage-genetique"></a>
+          4.7 Prononce-toi sur un enjeu : Le dépistage <span class="last-word">génétique<a class="anchor-link" href="#47-prononce-toi-sur-un-enjeu--le-depistage-genetique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -469,7 +473,7 @@
 
 
         <h4 id="48-les-progres-de-la-microscopie">
-          4.8 Les progrès de la microscopie<a class="anchor-link" href="#48-les-progres-de-la-microscopie"></a>
+          4.8 Les progrès de la <span class="last-word">microscopie<a class="anchor-link" href="#48-les-progres-de-la-microscopie"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -494,7 +498,7 @@
 
 
         <h4 id="info-techno--lavenir-de-la-microscopie">
-          Info techno : L'avenir de la microscopie<a class="anchor-link" href="#info-techno--lavenir-de-la-microscopie"></a>
+          Info techno : L'avenir de la <span class="last-word">microscopie<a class="anchor-link" href="#info-techno--lavenir-de-la-microscopie"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -503,7 +507,7 @@
 
 
         <h4 id="chapitre-4-en-resume">
-          Chapitre 4 En résumé<a class="anchor-link" href="#chapitre-4-en-resume"></a>
+          Chapitre 4 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-4-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -524,7 +528,7 @@
 
 
         <h4 id="chapitre-4-revision">
-          Chapitre 4 Révision<a class="anchor-link" href="#chapitre-4-revision"></a>
+          Chapitre 4 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-4-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -546,11 +550,11 @@
 
 
         <h3 id="chapitre-5-les-cellules-dans-leur-environnement">
-          Chapitre 5 Les cellules dans leur environnement<a class="anchor-link" href="#chapitre-5-les-cellules-dans-leur-environnement"></a>
+          Chapitre 5 Les cellules dans leur <span class="last-word">environnement<a class="anchor-link" href="#chapitre-5-les-cellules-dans-leur-environnement"></a></span>
         </h3>
       
         <h4 id="chapitre-5--introduction">
-          Chapitre 5 : Introduction<a class="anchor-link" href="#chapitre-5--introduction"></a>
+          Chapitre 5 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-5--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -581,7 +585,7 @@
 
 
         <h4 id="51-la-membrane-cellulaire">
-          5.1 La membrane cellulaire<a class="anchor-link" href="#51-la-membrane-cellulaire"></a>
+          5.1 La membrane <span class="last-word">cellulaire<a class="anchor-link" href="#51-la-membrane-cellulaire"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -602,7 +606,7 @@
 
 
         <h4 id="52-le-mouvement-des-fluides-dans-la-cellule--la-diffusion">
-          5.2 Le mouvement des fluides dans la cellule : la diffusion<a class="anchor-link" href="#52-le-mouvement-des-fluides-dans-la-cellule--la-diffusion"></a>
+          5.2 Le mouvement des fluides dans la cellule : la <span class="last-word">diffusion<a class="anchor-link" href="#52-le-mouvement-des-fluides-dans-la-cellule--la-diffusion"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -623,7 +627,7 @@
 
 
         <h4 id="53-losmose--une-forme-importante-de-diffusion">
-          5.3 L'osmose : une forme importante de diffusion<a class="anchor-link" href="#53-losmose--une-forme-importante-de-diffusion"></a>
+          5.3 L'osmose : une forme importante de <span class="last-word">diffusion<a class="anchor-link" href="#53-losmose--une-forme-importante-de-diffusion"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -644,7 +648,7 @@
 
 
         <h4 id="sciences-appliquees--les-technologies-membranaires">
-          Sciences appliquées : Les technologies membranaires<a class="anchor-link" href="#sciences-appliquees--les-technologies-membranaires"></a>
+          Sciences appliquées : Les technologies <span class="last-word">membranaires<a class="anchor-link" href="#sciences-appliquees--les-technologies-membranaires"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -653,7 +657,7 @@
 
 
         <h4 id="54-mene-une-experience--fabrique-un-modele-et-observe-la-diffusion">
-          5.4 Mène une expérience : Fabrique un modèle et observe la diffusion<a class="anchor-link" href="#54-mene-une-experience--fabrique-un-modele-et-observe-la-diffusion"></a>
+          5.4 Mène une expérience : Fabrique un modèle et observe la <span class="last-word">diffusion<a class="anchor-link" href="#54-mene-une-experience--fabrique-un-modele-et-observe-la-diffusion"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -682,7 +686,7 @@
 
 
         <h4 id="55-mene-une-experience--fabrique-un-modele-et-observe-losmose">
-          5.5 Mène une expérience : Fabrique un modèle et observe l'osmose<a class="anchor-link" href="#55-mene-une-experience--fabrique-un-modele-et-observe-losmose"></a>
+          5.5 Mène une expérience : Fabrique un modèle et observe <span class="last-word">l'osmose<a class="anchor-link" href="#55-mene-une-experience--fabrique-un-modele-et-observe-losmose"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -719,7 +723,7 @@
 
 
         <h4 id="56-lendocytose-et-lexocytose">
-          5.6 L'endocytose et l'exocytose<a class="anchor-link" href="#56-lendocytose-et-lexocytose"></a>
+          5.6 L'endocytose et <span class="last-word">l'exocytose<a class="anchor-link" href="#56-lendocytose-et-lexocytose"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -756,7 +760,7 @@
 
 
         <h4 id="chapitre-5-en-resume">
-          Chapitre 5 En résumé<a class="anchor-link" href="#chapitre-5-en-resume"></a>
+          Chapitre 5 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-5-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -769,7 +773,7 @@
 
 
         <h4 id="chapitre-5-revision">
-          Chapitre 5 Révision<a class="anchor-link" href="#chapitre-5-revision"></a>
+          Chapitre 5 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-5-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -791,11 +795,11 @@
 
 
         <h3 id="chapitre-6-lorganisation-des-cellules">
-          Chapitre 6 L'organisation des cellules<a class="anchor-link" href="#chapitre-6-lorganisation-des-cellules"></a>
+          Chapitre 6 L'organisation des <span class="last-word">cellules<a class="anchor-link" href="#chapitre-6-lorganisation-des-cellules"></a></span>
         </h3>
       
         <h4 id="chapitre-6--introduction">
-          Chapitre 6 : Introduction<a class="anchor-link" href="#chapitre-6--introduction"></a>
+          Chapitre 6 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-6--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -818,7 +822,7 @@
 
 
         <h4 id="61-classifier-les-organismes">
-          6.1 Classifier les organismes<a class="anchor-link" href="#61-classifier-les-organismes"></a>
+          6.1 Classifier les <span class="last-word">organismes<a class="anchor-link" href="#61-classifier-les-organismes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -839,7 +843,7 @@
 
 
         <h4 id="62-les-organismes-unicellulaires">
-          6.2 Les organismes unicellulaires<a class="anchor-link" href="#62-les-organismes-unicellulaires"></a>
+          6.2 Les organismes <span class="last-word">unicellulaires<a class="anchor-link" href="#62-les-organismes-unicellulaires"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -852,7 +856,7 @@
 
 
         <h4 id="63-realise-une-activite--examine-des-organismes-unicellulaires">
-          6.3 Réalise une activité : Examine des organismes unicellulaires<a class="anchor-link" href="#63-realise-une-activite--examine-des-organismes-unicellulaires"></a>
+          6.3 Réalise une activité : Examine des organismes <span class="last-word">unicellulaires<a class="anchor-link" href="#63-realise-une-activite--examine-des-organismes-unicellulaires"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -881,7 +885,7 @@
 
 
         <h4 id="64-les-organismes-multicellulaires">
-          6.4 Les organismes multicellulaires<a class="anchor-link" href="#64-les-organismes-multicellulaires"></a>
+          6.4 Les organismes <span class="last-word">multicellulaires<a class="anchor-link" href="#64-les-organismes-multicellulaires"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -906,7 +910,7 @@
 
 
         <h4 id="65-les-organismes-multicellulaires-et-leurs-besoins">
-          6.5 Les organismes multicellulaires et leurs besoins<a class="anchor-link" href="#65-les-organismes-multicellulaires-et-leurs-besoins"></a>
+          6.5 Les organismes multicellulaires et leurs <span class="last-word">besoins<a class="anchor-link" href="#65-les-organismes-multicellulaires-et-leurs-besoins"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -927,7 +931,7 @@
 
 
         <h4 id="66-les-interactions-entre-les-unicellulaires-et-les-multicellulaires">
-          6.6 Les interactions entre les unicellulaires et les multicellulaires<a class="anchor-link" href="#66-les-interactions-entre-les-unicellulaires-et-les-multicellulaires"></a>
+          6.6 Les interactions entre les unicellulaires et les <span class="last-word">multicellulaires<a class="anchor-link" href="#66-les-interactions-entre-les-unicellulaires-et-les-multicellulaires"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -956,7 +960,7 @@
 
 
         <h4 id="geniales-les-sciences--la-banques-de-sang-du-cordon-ombilical--un-capital-pour-lavenir">
-          Géniales, les sciences! : La banques de sang du cordon ombilical : un capital pour l'avenir<a class="anchor-link" href="#geniales-les-sciences--la-banques-de-sang-du-cordon-ombilical--un-capital-pour-lavenir"></a>
+          Géniales, les sciences! : La banques de sang du cordon ombilical : un capital pour <span class="last-word">l'avenir<a class="anchor-link" href="#geniales-les-sciences--la-banques-de-sang-du-cordon-ombilical--un-capital-pour-lavenir"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -965,7 +969,7 @@
 
 
         <h4 id="chapitre-6-en-resume">
-          Chapitre 6 En résumé<a class="anchor-link" href="#chapitre-6-en-resume"></a>
+          Chapitre 6 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-6-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -978,7 +982,7 @@
 
 
         <h4 id="chapitre-6-revision">
-          Chapitre 6 Révision<a class="anchor-link" href="#chapitre-6-revision"></a>
+          Chapitre 6 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-6-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1000,7 +1004,7 @@
 
 
         <h3 id="unite-b-activite-de-fin-dunite--explore-la-diversite-en-observant-des-organismes">
-          Unité B Activité de fin d'unité : Explore la diversité en observant des organismes <a class="anchor-link" href="#unite-b-activite-de-fin-dunite--explore-la-diversite-en-observant-des-organismes"></a>
+          Unité B Activité de fin d'unité : Explore la diversité en observant des organismes <span class="last-word"><a class="anchor-link" href="#unite-b-activite-de-fin-dunite--explore-la-diversite-en-observant-des-organismes"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1030,7 +1034,7 @@
 
 
         <h3 id="unite-b-revision-de-lunite">
-          Unité B Révision de l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a>
+          Unité B Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1053,11 +1057,11 @@
 
 
         <h2 id="documents-reproductibles-modifiables">
-          Documents reproductibles modifiables<a class="anchor-link" href="#documents-reproductibles-modifiables"></a>
+          Documents reproductibles <span class="last-word">modifiables<a class="anchor-link" href="#documents-reproductibles-modifiables"></a></span>
         </h2>
       
         <h3 id="chapitre-4-la-cellule--unite-de-base-de-la-vie">
-          Chapitre 4 La cellule : unité de base de la vie<a class="anchor-link" href="#chapitre-4-la-cellule--unite-de-base-de-la-vie"></a>
+          Chapitre 4 La cellule : unité de base de la <span class="last-word">vie<a class="anchor-link" href="#chapitre-4-la-cellule--unite-de-base-de-la-vie"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1083,7 +1087,7 @@
 
 
         <h3 id="chapitre-5-les-cellules-dans-leur-environnement">
-          Chapitre 5 Les cellules dans leur environnement<a class="anchor-link" href="#chapitre-5-les-cellules-dans-leur-environnement"></a>
+          Chapitre 5 Les cellules dans leur <span class="last-word">environnement<a class="anchor-link" href="#chapitre-5-les-cellules-dans-leur-environnement"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1105,7 +1109,7 @@
 
 
         <h3 id="chapitre-6-lorganisation-des-cellules">
-          Chapitre 6 L'organisation des cellules<a class="anchor-link" href="#chapitre-6-lorganisation-des-cellules"></a>
+          Chapitre 6 L'organisation des <span class="last-word">cellules<a class="anchor-link" href="#chapitre-6-lorganisation-des-cellules"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1127,7 +1131,7 @@
 
 
         <h3 id="unite-b">
-          Unité B<a class="anchor-link" href="#unite-b"></a>
+          Unité <span class="last-word">B<a class="anchor-link" href="#unite-b"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1141,7 +1145,7 @@
 
 
         <h3 id="unite-b-documents-reproductibles">
-          Unité B Documents reproductibles<a class="anchor-link" href="#unite-b-documents-reproductibles"></a>
+          Unité B Documents <span class="last-word">reproductibles<a class="anchor-link" href="#unite-b-documents-reproductibles"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1152,11 +1156,11 @@
 
 
         <h2 id="unite-b--pages-du-manuel">
-          Unité B : Pages du manuel<a class="anchor-link" href="#unite-b--pages-du-manuel"></a>
+          Unité B : Pages du <span class="last-word">manuel<a class="anchor-link" href="#unite-b--pages-du-manuel"></a></span>
         </h2>
       
         <h3 id="unite-b--introduction">
-          Unité B : Introduction <a class="anchor-link" href="#unite-b--introduction"></a>
+          Unité B : Introduction <span class="last-word"><a class="anchor-link" href="#unite-b--introduction"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1172,7 +1176,7 @@
 
 
         <h3 id="chapitre-4-la-cellule--unite-de-base-de-la-vie">
-          Chapitre 4 La cellule : unité de base de la vie<a class="anchor-link" href="#chapitre-4-la-cellule--unite-de-base-de-la-vie"></a>
+          Chapitre 4 La cellule : unité de base de la <span class="last-word">vie<a class="anchor-link" href="#chapitre-4-la-cellule--unite-de-base-de-la-vie"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1206,7 +1210,7 @@
 
 
         <h3 id="chapitre-5-les-cellules-dans-leur-environnement">
-          Chapitre 5 Les cellules dans leur environnement<a class="anchor-link" href="#chapitre-5-les-cellules-dans-leur-environnement"></a>
+          Chapitre 5 Les cellules dans leur <span class="last-word">environnement<a class="anchor-link" href="#chapitre-5-les-cellules-dans-leur-environnement"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1236,7 +1240,7 @@
 
 
         <h3 id="chapitre-6-lorganisation-des-cellules">
-          Chapitre 6 L'organisation des cellules<a class="anchor-link" href="#chapitre-6-lorganisation-des-cellules"></a>
+          Chapitre 6 L'organisation des <span class="last-word">cellules<a class="anchor-link" href="#chapitre-6-lorganisation-des-cellules"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1266,7 +1270,7 @@
 
 
         <h3 id="unite-b-activite-de-fin-dunite--explore-la-diversite-en-observant-des-organismes">
-          Unité B Activité de fin d'unité : Explore la diversité en observant des organismes <a class="anchor-link" href="#unite-b-activite-de-fin-dunite--explore-la-diversite-en-observant-des-organismes"></a>
+          Unité B Activité de fin d'unité : Explore la diversité en observant des organismes <span class="last-word"><a class="anchor-link" href="#unite-b-activite-de-fin-dunite--explore-la-diversite-en-observant-des-organismes"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1276,7 +1280,7 @@
 
 
         <h3 id="unite-b-revision-de-lunite">
-          Unité B Révision de l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a>
+          Unité B Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1287,11 +1291,11 @@
 
 
         <h2 id="outils-devaluation">
-          Outils d'évaluation<a class="anchor-link" href="#outils-devaluation"></a>
+          Outils <span class="last-word">d'évaluation<a class="anchor-link" href="#outils-devaluation"></a></span>
         </h2>
       
         <h3 id="grilles-devaluation">
-          Grilles d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a>
+          Grilles <span class="last-word">d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1337,7 +1341,7 @@
 
 
         <h3 id="resumes-de-levaluation">
-          Résumés de l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a>
+          Résumés de <span class="last-word">l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1383,7 +1387,7 @@
 
 
         <h3 id="listes-de-verification-de-lautoevaluation">
-          Listes de vérification de l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a>
+          Listes de vérification de <span class="last-word">l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1417,7 +1421,7 @@
 
 
         <h3 id="tache-de-fin-dunite">
-          Tâche de fin d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a>
+          Tâche de fin <span class="last-word">d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1440,7 +1444,7 @@
 
 
         <h2 id="documents-reproductibles-generaux">
-          Documents reproductibles généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a>
+          Documents reproductibles <span class="last-word">généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a></span>
         </h2>
       
 <h5>Documents reproductibles</h5>

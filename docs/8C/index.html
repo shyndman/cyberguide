@@ -9,27 +9,6 @@
           padding-bottom: 3rem;
         }
 
-        h1 > a,
-        h2 > a,
-        h3 > a,
-        h4 > a,
-        h5 > a {
-          display: inline-block;
-          color: #0a0a0a;
-        }
-
-        h1:hover > .anchor-link,
-        h2:hover > .anchor-link,
-        h3:hover > .anchor-link,
-        h4:hover > .anchor-link,
-        h5:hover > .anchor-link {
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
-          width: 16px;
-          height: 16px;
-          margin-left: 8px;
-          vertical-align: middle;
-        }
-
         h1 {
           font-weight: 300;
           text-align: center;
@@ -39,7 +18,7 @@
 
         h2 {
           font-size: 2.3rem;
-          margin-top: 1.4rem;
+          margin-top: 2.4rem;
           margin-bottom: 0.6rem;
         }
 
@@ -66,11 +45,36 @@
         }
 
         p + h4 {
-          margin-top: 2.6rem;
+          margin-top: 2rem;
         }
 
         p {
           margin-bottom: 0.2rem;
+        }
+
+        .last-word {
+          white-space: nowrap;
+        }
+
+        h1 > .last-word > .anchor-link,
+        h2 > .last-word > .anchor-link,
+        h3 > .last-word > .anchor-link,
+        h4 > .last-word > .anchor-link,
+        h5 > .last-word > .anchor-link {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+          vertical-align: middle;
+          color: #0a0a0a;
+        }
+
+        h1:hover > .last-word > .anchor-link,
+        h2:hover > .last-word > .anchor-link,
+        h3:hover > .last-word > .anchor-link,
+        h4:hover > .last-word > .anchor-link,
+        h5:hover > .last-word > .anchor-link {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
         }
 
         @media print, screen and (max-width: 40em) {
@@ -107,15 +111,15 @@
         <h1>Sciences et technologie - Perspectives 8C</h1>
 
         <h2 id="sciences-et-technologie-perspectives-8-survol">
-          Sciences et technologie Perspectives 8 Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-8-survol"></a>
+          Sciences et technologie Perspectives 8 <span class="last-word">Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-8-survol"></a></span>
         </h2>
       
         <h3 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h3>
       
         <h4 id="introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education">
-          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a>
+          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -124,7 +128,7 @@
 
 
         <h4 id="comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education">
-          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a>
+          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -133,7 +137,7 @@
 
 
         <h4 id="composantes-de-perspectives">
-          Composantes de Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a>
+          Composantes de <span class="last-word">Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -142,7 +146,7 @@
 
 
         <h4 id="presentation-de-la-ressource">
-          Présentation de la ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a>
+          Présentation de la <span class="last-word">ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -155,15 +159,15 @@
 
 
         <h2 id="unite-c-plans-de-lecons">
-          Unité C Plans de leçons<a class="anchor-link" href="#unite-c-plans-de-lecons"></a>
+          Unité C Plans de <span class="last-word">leçons<a class="anchor-link" href="#unite-c-plans-de-lecons"></a></span>
         </h2>
       
         <h3 id="introduction">
-          Introduction<a class="anchor-link" href="#introduction"></a>
+           <span class="last-word">Introduction<a class="anchor-link" href="#introduction"></a></span>
         </h3>
       
         <h4 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -172,7 +176,7 @@
 
 
         <h4 id="concordance-avec-le-curriculum">
-          Concordance avec le curriculum <a class="anchor-link" href="#concordance-avec-le-curriculum"></a>
+          Concordance avec le curriculum <span class="last-word"><a class="anchor-link" href="#concordance-avec-le-curriculum"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -181,7 +185,7 @@
 
 
         <h4 id="planification-de-lunite">
-          Planification de l'unité<a class="anchor-link" href="#planification-de-lunite"></a>
+          Planification de <span class="last-word">l'unité<a class="anchor-link" href="#planification-de-lunite"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -194,7 +198,7 @@
 
 
         <h4 id="materiel">
-          Matériel<a class="anchor-link" href="#materiel"></a>
+           <span class="last-word">Matériel<a class="anchor-link" href="#materiel"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -203,7 +207,7 @@
 
 
         <h4 id="introduction">
-          Introduction <a class="anchor-link" href="#introduction"></a>
+          Introduction <span class="last-word"><a class="anchor-link" href="#introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -223,11 +227,11 @@
 
 
         <h3 id="chapitre-7-les-fluides-en-mouvement">
-          Chapitre 7 Les fluides en mouvement<a class="anchor-link" href="#chapitre-7-les-fluides-en-mouvement"></a>
+          Chapitre 7 Les fluides en <span class="last-word">mouvement<a class="anchor-link" href="#chapitre-7-les-fluides-en-mouvement"></a></span>
         </h3>
       
         <h4 id="chapitre-7--introduction">
-          Chapitre 7 : Introduction<a class="anchor-link" href="#chapitre-7--introduction"></a>
+          Chapitre 7 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-7--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -262,7 +266,7 @@
 
 
         <h4 id="71-des-fluides-partout">
-          7.1 Des fluides partout<a class="anchor-link" href="#71-des-fluides-partout"></a>
+          7.1 Des fluides <span class="last-word">partout<a class="anchor-link" href="#71-des-fluides-partout"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -295,7 +299,7 @@
 
 
         <h4 id="72-les-caracteristiques-des-fluides">
-          7.2 Les caractéristiques des fluides<a class="anchor-link" href="#72-les-caracteristiques-des-fluides"></a>
+          7.2 Les caractéristiques des <span class="last-word">fluides<a class="anchor-link" href="#72-les-caracteristiques-des-fluides"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -320,7 +324,7 @@
 
 
         <h4 id="73-le-debit-et-la-viscosite">
-          7.3 Le débit et la viscosité<a class="anchor-link" href="#73-le-debit-et-la-viscosite"></a>
+          7.3 Le débit et la <span class="last-word">viscosité<a class="anchor-link" href="#73-le-debit-et-la-viscosite"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -361,7 +365,7 @@
 
 
         <h4 id="74-realise-une-activite--comparer-les-debits">
-          7.4 Réalise une activité : Comparer les débits<a class="anchor-link" href="#74-realise-une-activite--comparer-les-debits"></a>
+          7.4 Réalise une activité : Comparer les <span class="last-word">débits<a class="anchor-link" href="#74-realise-une-activite--comparer-les-debits"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -390,7 +394,7 @@
 
 
         <h4 id="75-mene-une-experience--un-peu-de-chaleur">
-          7.5 Mène une expérience : Un peu de chaleur<a class="anchor-link" href="#75-mene-une-experience--un-peu-de-chaleur"></a>
+          7.5 Mène une expérience : Un peu de <span class="last-word">chaleur<a class="anchor-link" href="#75-mene-une-experience--un-peu-de-chaleur"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -427,7 +431,7 @@
 
 
         <h4 id="76-controler-lecoulement-des-fluides">
-          7.6 Contrôler l'écoulement des fluides<a class="anchor-link" href="#76-controler-lecoulement-des-fluides"></a>
+          7.6 Contrôler l'écoulement des <span class="last-word">fluides<a class="anchor-link" href="#76-controler-lecoulement-des-fluides"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -460,7 +464,7 @@
 
 
         <h4 id="geniales-les-sciences-le-fuselage-le-plus-performant-du-monde">
-          Géniales, les sciences! Le fuselage le plus performant du monde!<a class="anchor-link" href="#geniales-les-sciences-le-fuselage-le-plus-performant-du-monde"></a>
+          Géniales, les sciences! Le fuselage le plus performant du <span class="last-word">monde!<a class="anchor-link" href="#geniales-les-sciences-le-fuselage-le-plus-performant-du-monde"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -469,7 +473,7 @@
 
 
         <h4 id="77-realise-une-activite--explorer-la-mecanique-des-fluides">
-          7.7 Réalise une activité : Explorer la mécanique des fluides<a class="anchor-link" href="#77-realise-une-activite--explorer-la-mecanique-des-fluides"></a>
+          7.7 Réalise une activité : Explorer la mécanique des <span class="last-word">fluides<a class="anchor-link" href="#77-realise-une-activite--explorer-la-mecanique-des-fluides"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -514,7 +518,7 @@
 
 
         <h4 id="78-prononce-toi-sur-un-enjeu--quand-les-fluides-se-deversent">
-          7.8 Prononce-toi sur un enjeu : Quand les fluides se déversent<a class="anchor-link" href="#78-prononce-toi-sur-un-enjeu--quand-les-fluides-se-deversent"></a>
+          7.8 Prononce-toi sur un enjeu : Quand les fluides se <span class="last-word">déversent<a class="anchor-link" href="#78-prononce-toi-sur-un-enjeu--quand-les-fluides-se-deversent"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -563,7 +567,7 @@
 
 
         <h4 id="chapitre-7-en-resume">
-          Chapitre 7 En résumé<a class="anchor-link" href="#chapitre-7-en-resume"></a>
+          Chapitre 7 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-7-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -576,7 +580,7 @@
 
 
         <h4 id="chapitre-7-revision">
-          Chapitre 7 Révision<a class="anchor-link" href="#chapitre-7-revision"></a>
+          Chapitre 7 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-7-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -602,11 +606,11 @@
 
 
         <h3 id="chapitre-8-masse-volumique-et-flottabilite">
-          Chapitre 8  Masse volumique et flottabilité<a class="anchor-link" href="#chapitre-8-masse-volumique-et-flottabilite"></a>
+          Chapitre 8  Masse volumique et <span class="last-word">flottabilité<a class="anchor-link" href="#chapitre-8-masse-volumique-et-flottabilite"></a></span>
         </h3>
       
         <h4 id="chapitre-8--introduction">
-          Chapitre 8 : Introduction<a class="anchor-link" href="#chapitre-8--introduction"></a>
+          Chapitre 8 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-8--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -633,7 +637,7 @@
 
 
         <h4 id="81-poids-masse-et-volume">
-          8.1 Poids, masse et volume<a class="anchor-link" href="#81-poids-masse-et-volume"></a>
+          8.1 Poids, masse et <span class="last-word">volume<a class="anchor-link" href="#81-poids-masse-et-volume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -658,7 +662,7 @@
 
 
         <h4 id="82-realise-une-activite--comparer-la-masse-et-le-volume">
-          8.2 Réalise une activité : Comparer la masse et le volume<a class="anchor-link" href="#82-realise-une-activite--comparer-la-masse-et-le-volume"></a>
+          8.2 Réalise une activité : Comparer la masse et le <span class="last-word">volume<a class="anchor-link" href="#82-realise-une-activite--comparer-la-masse-et-le-volume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -695,7 +699,7 @@
 
 
         <h4 id="83-la-masse-volumique">
-          8.3 La masse volumique<a class="anchor-link" href="#83-la-masse-volumique"></a>
+          8.3 La masse <span class="last-word">volumique<a class="anchor-link" href="#83-la-masse-volumique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -716,7 +720,7 @@
 
 
         <h4 id="84-realise-une-activite--mesurer-la-masse-volumique--fabrique-un-areometre">
-          8.4 Réalise une activité : Mesurer la masse volumique : Fabrique un aréomètre<a class="anchor-link" href="#84-realise-une-activite--mesurer-la-masse-volumique--fabrique-un-areometre"></a>
+          8.4 Réalise une activité : Mesurer la masse volumique : Fabrique un <span class="last-word">aréomètre<a class="anchor-link" href="#84-realise-une-activite--mesurer-la-masse-volumique--fabrique-un-areometre"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -745,7 +749,7 @@
 
 
         <h4 id="85-la-flottabilite">
-          8.5 La flottabilité<a class="anchor-link" href="#85-la-flottabilite"></a>
+          8.5 La <span class="last-word">flottabilité<a class="anchor-link" href="#85-la-flottabilite"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -774,7 +778,7 @@
 
 
         <h4 id="sciences-appliquees--des-tresors-au-fond-des-mers">
-          Sciences appliquées : Des trésors au fond des mers<a class="anchor-link" href="#sciences-appliquees--des-tresors-au-fond-des-mers"></a>
+          Sciences appliquées : Des trésors au fond des <span class="last-word">mers<a class="anchor-link" href="#sciences-appliquees--des-tresors-au-fond-des-mers"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -783,7 +787,7 @@
 
 
         <h4 id="86-masse-volumique-et-flottabilite-en-action">
-          8.6 Masse volumique et flottabilité en action<a class="anchor-link" href="#86-masse-volumique-et-flottabilite-en-action"></a>
+          8.6 Masse volumique et flottabilité en <span class="last-word">action<a class="anchor-link" href="#86-masse-volumique-et-flottabilite-en-action"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -804,7 +808,7 @@
 
 
         <h4 id="chapitre-8-en-resume">
-          Chapitre 8 En résumé<a class="anchor-link" href="#chapitre-8-en-resume"></a>
+          Chapitre 8 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-8-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -817,7 +821,7 @@
 
 
         <h4 id="chapitre-8-revision">
-          Chapitre 8 Révision<a class="anchor-link" href="#chapitre-8-revision"></a>
+          Chapitre 8 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-8-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -839,11 +843,11 @@
 
 
         <h3 id="chapitre-9-les-fluides-sous-pression">
-          Chapitre 9 Les fluides sous pression<a class="anchor-link" href="#chapitre-9-les-fluides-sous-pression"></a>
+          Chapitre 9 Les fluides sous <span class="last-word">pression<a class="anchor-link" href="#chapitre-9-les-fluides-sous-pression"></a></span>
         </h3>
       
         <h4 id="chapitre-9--introduction">
-          Chapitre 9 : Introduction<a class="anchor-link" href="#chapitre-9--introduction"></a>
+          Chapitre 9 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-9--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -870,7 +874,7 @@
 
 
         <h4 id="91-mettre-les-fluides-sous-pression">
-          9.1 Mettre les fluides sous pression<a class="anchor-link" href="#91-mettre-les-fluides-sous-pression"></a>
+          9.1 Mettre les fluides sous <span class="last-word">pression<a class="anchor-link" href="#91-mettre-les-fluides-sous-pression"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -895,7 +899,7 @@
 
 
         <h4 id="92-mene-une-experience--etudie-les-fluides-dans-des-systemes-fermes">
-          9.2 Mène une expérience : Étudie les fluides dans des systèmes fermés<a class="anchor-link" href="#92-mene-une-experience--etudie-les-fluides-dans-des-systemes-fermes"></a>
+          9.2 Mène une expérience : Étudie les fluides dans des systèmes <span class="last-word">fermés<a class="anchor-link" href="#92-mene-une-experience--etudie-les-fluides-dans-des-systemes-fermes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -924,7 +928,7 @@
 
 
         <h4 id="93-realise-une-activite--fais-travailler-les-fluides">
-          9.3 Réalise une activité : Fais travailler les fluides<a class="anchor-link" href="#93-realise-une-activite--fais-travailler-les-fluides"></a>
+          9.3 Réalise une activité : Fais travailler les <span class="last-word">fluides<a class="anchor-link" href="#93-realise-une-activite--fais-travailler-les-fluides"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -953,7 +957,7 @@
 
 
         <h4 id="94-les-effets-de-la-pression-externe-sur-les-fluides">
-          9.4 Les effets de la pression externe sur les fluides<a class="anchor-link" href="#94-les-effets-de-la-pression-externe-sur-les-fluides"></a>
+          9.4 Les effets de la pression externe sur les <span class="last-word">fluides<a class="anchor-link" href="#94-les-effets-de-la-pression-externe-sur-les-fluides"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -986,7 +990,7 @@
 
 
         <h4 id="info-techno--une-merveille-hydraulique--la-falkirk-wheel">
-          Info techno : Une merveille hydraulique : la Falkirk Wheel<a class="anchor-link" href="#info-techno--une-merveille-hydraulique--la-falkirk-wheel"></a>
+          Info techno : Une merveille hydraulique : la Falkirk <span class="last-word">Wheel<a class="anchor-link" href="#info-techno--une-merveille-hydraulique--la-falkirk-wheel"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -995,7 +999,7 @@
 
 
         <h4 id="95-les-relations-entre-la-pression-le-volume-et-la-temperature">
-          9.5 Les relations entre la pression, le volume et la température<a class="anchor-link" href="#95-les-relations-entre-la-pression-le-volume-et-la-temperature"></a>
+          9.5 Les relations entre la pression, le volume et la <span class="last-word">température<a class="anchor-link" href="#95-les-relations-entre-la-pression-le-volume-et-la-temperature"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1028,7 +1032,7 @@
 
 
         <h4 id="96-resous-un-probleme-technologique--resous-des-problemes-grace-a-lhydraulique-et-a-la-pneumatique">
-          9.6 Résous un problème technologique : Résous des problèmes grâce à l'hydraulique et à la pneumatique<a class="anchor-link" href="#96-resous-un-probleme-technologique--resous-des-problemes-grace-a-lhydraulique-et-a-la-pneumatique"></a>
+          9.6 Résous un problème technologique : Résous des problèmes grâce à l'hydraulique et à la <span class="last-word">pneumatique<a class="anchor-link" href="#96-resous-un-probleme-technologique--resous-des-problemes-grace-a-lhydraulique-et-a-la-pneumatique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1057,7 +1061,7 @@
 
 
         <h4 id="97-limportance-des-valves">
-          9.7 L'importance des valves<a class="anchor-link" href="#97-limportance-des-valves"></a>
+          9.7 L'importance des <span class="last-word">valves<a class="anchor-link" href="#97-limportance-des-valves"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1070,7 +1074,7 @@
 
 
         <h4 id="98-la-puissance-des-fluides">
-          9.8 La puissance des fluides<a class="anchor-link" href="#98-la-puissance-des-fluides"></a>
+          9.8 La puissance des <span class="last-word">fluides<a class="anchor-link" href="#98-la-puissance-des-fluides"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1099,7 +1103,7 @@
 
 
         <h4 id="99-prononce-toi-sur-un-enjeu--la-puissance-des-fluides--couts-et-avantages">
-          9.9 Prononce-toi sur un enjeu : La puissance des fluides : Coûts et avantages<a class="anchor-link" href="#99-prononce-toi-sur-un-enjeu--la-puissance-des-fluides--couts-et-avantages"></a>
+          9.9 Prononce-toi sur un enjeu : La puissance des fluides : Coûts et <span class="last-word">avantages<a class="anchor-link" href="#99-prononce-toi-sur-un-enjeu--la-puissance-des-fluides--couts-et-avantages"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1140,7 +1144,7 @@
 
 
         <h4 id="chapitre-9-en-resume">
-          Chapitre 9 En résumé<a class="anchor-link" href="#chapitre-9-en-resume"></a>
+          Chapitre 9 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-9-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1153,7 +1157,7 @@
 
 
         <h4 id="chapitre-9-revision">
-          Chapitre 9 Révision<a class="anchor-link" href="#chapitre-9-revision"></a>
+          Chapitre 9 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-9-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1179,7 +1183,7 @@
 
 
         <h3 id="unite-c-activite-de-fin-dunite--jouer-avec-les-fluides">
-          Unité C Activité de fin d'unité : Jouer avec les fluides<a class="anchor-link" href="#unite-c-activite-de-fin-dunite--jouer-avec-les-fluides"></a>
+          Unité C Activité de fin d'unité : Jouer avec les <span class="last-word">fluides<a class="anchor-link" href="#unite-c-activite-de-fin-dunite--jouer-avec-les-fluides"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1213,7 +1217,7 @@
 
 
         <h3 id="unite-c-revision-de-lunite">
-          Unité C Révision de l'unité<a class="anchor-link" href="#unite-c-revision-de-lunite"></a>
+          Unité C Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-c-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1235,7 +1239,7 @@
 
 
         <h3 id="unite-c--les-fluides-reponses">
-          Unité C : Les fluides Réponses<a class="anchor-link" href="#unite-c--les-fluides-reponses"></a>
+          Unité C : Les fluides <span class="last-word">Réponses<a class="anchor-link" href="#unite-c--les-fluides-reponses"></a></span>
         </h3>
       
 <h5>Guide d'enseignement</h5>
@@ -1246,11 +1250,11 @@
 
 
         <h2 id="documents-reproductibles-modifiables">
-          Documents reproductibles modifiables<a class="anchor-link" href="#documents-reproductibles-modifiables"></a>
+          Documents reproductibles <span class="last-word">modifiables<a class="anchor-link" href="#documents-reproductibles-modifiables"></a></span>
         </h2>
       
         <h3 id="chapitre-7-les-fluides-en-mouvement">
-          Chapitre 7 Les fluides en mouvement<a class="anchor-link" href="#chapitre-7-les-fluides-en-mouvement"></a>
+          Chapitre 7 Les fluides en <span class="last-word">mouvement<a class="anchor-link" href="#chapitre-7-les-fluides-en-mouvement"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1280,7 +1284,7 @@
 
 
         <h3 id="chapitre-8-masse-volumique-et-flottabilite">
-          Chapitre 8 Masse volumique et flottabilité<a class="anchor-link" href="#chapitre-8-masse-volumique-et-flottabilite"></a>
+          Chapitre 8 Masse volumique et <span class="last-word">flottabilité<a class="anchor-link" href="#chapitre-8-masse-volumique-et-flottabilite"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1306,7 +1310,7 @@
 
 
         <h3 id="chapitre-9-les-fluides-sous-pression">
-          Chapitre 9 Les fluides sous pression<a class="anchor-link" href="#chapitre-9-les-fluides-sous-pression"></a>
+          Chapitre 9 Les fluides sous <span class="last-word">pression<a class="anchor-link" href="#chapitre-9-les-fluides-sous-pression"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1332,7 +1336,7 @@
 
 
         <h3 id="unite-c">
-          Unité C<a class="anchor-link" href="#unite-c"></a>
+          Unité <span class="last-word">C<a class="anchor-link" href="#unite-c"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1346,7 +1350,7 @@
 
 
         <h3 id="unite-c--les-fluides-reponses">
-          Unité C : Les fluides Réponses<a class="anchor-link" href="#unite-c--les-fluides-reponses"></a>
+          Unité C : Les fluides <span class="last-word">Réponses<a class="anchor-link" href="#unite-c--les-fluides-reponses"></a></span>
         </h3>
       
 <h5>Guide d'enseignement</h5>
@@ -1357,11 +1361,11 @@
 
 
         <h2 id="unite-c--pages-du-manuel">
-          Unité C : Pages du manuel<a class="anchor-link" href="#unite-c--pages-du-manuel"></a>
+          Unité C : Pages du <span class="last-word">manuel<a class="anchor-link" href="#unite-c--pages-du-manuel"></a></span>
         </h2>
       
         <h3 id="unite-c--introduction">
-          Unité C : Introduction<a class="anchor-link" href="#unite-c--introduction"></a>
+          Unité C : <span class="last-word">Introduction<a class="anchor-link" href="#unite-c--introduction"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1377,7 +1381,7 @@
 
 
         <h3 id="chapitre-7-les-fluides-en-mouvement">
-          Chapitre 7 Les fluides en mouvement<a class="anchor-link" href="#chapitre-7-les-fluides-en-mouvement"></a>
+          Chapitre 7 Les fluides en <span class="last-word">mouvement<a class="anchor-link" href="#chapitre-7-les-fluides-en-mouvement"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1411,7 +1415,7 @@
 
 
         <h3 id="chapitre-8-masse-volumique-et-flottabilite">
-          Chapitre 8 Masse volumique et flottabilité<a class="anchor-link" href="#chapitre-8-masse-volumique-et-flottabilite"></a>
+          Chapitre 8 Masse volumique et <span class="last-word">flottabilité<a class="anchor-link" href="#chapitre-8-masse-volumique-et-flottabilite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1441,7 +1445,7 @@
 
 
         <h3 id="chapitre-9-les-fluides-sous-pression">
-          Chapitre 9 Les fluides sous pression<a class="anchor-link" href="#chapitre-9-les-fluides-sous-pression"></a>
+          Chapitre 9 Les fluides sous <span class="last-word">pression<a class="anchor-link" href="#chapitre-9-les-fluides-sous-pression"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1477,7 +1481,7 @@
 
 
         <h3 id="unite-c-activite-de-fin-dunite--jouer-avec-les-fluides">
-          Unité C Activité de fin d'unité : Jouer avec les fluides<a class="anchor-link" href="#unite-c-activite-de-fin-dunite--jouer-avec-les-fluides"></a>
+          Unité C Activité de fin d'unité : Jouer avec les <span class="last-word">fluides<a class="anchor-link" href="#unite-c-activite-de-fin-dunite--jouer-avec-les-fluides"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1487,7 +1491,7 @@
 
 
         <h3 id="unite-c-revision-de-lunite">
-          Unité C Révision de l'unité<a class="anchor-link" href="#unite-c-revision-de-lunite"></a>
+          Unité C Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-c-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1498,11 +1502,11 @@
 
 
         <h2 id="outils-devaluation">
-          Outils d'évaluation<a class="anchor-link" href="#outils-devaluation"></a>
+          Outils <span class="last-word">d'évaluation<a class="anchor-link" href="#outils-devaluation"></a></span>
         </h2>
       
         <h3 id="grilles-devaluation">
-          Grilles d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a>
+          Grilles <span class="last-word">d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1548,7 +1552,7 @@
 
 
         <h3 id="resumes-de-levaluation">
-          Résumés de l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a>
+          Résumés de <span class="last-word">l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1594,7 +1598,7 @@
 
 
         <h3 id="listes-de-verification-de-lautoevaluation">
-          Listes de vérification de l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a>
+          Listes de vérification de <span class="last-word">l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1628,7 +1632,7 @@
 
 
         <h3 id="tache-de-fin-dunite">
-          Tâche de fin d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a>
+          Tâche de fin <span class="last-word">d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1651,7 +1655,7 @@
 
 
         <h2 id="documents-reproductibles-generaux">
-          Documents reproductibles généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a>
+          Documents reproductibles <span class="last-word">généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a></span>
         </h2>
       
 <h5>Documents reproductibles</h5>

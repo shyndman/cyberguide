@@ -9,27 +9,6 @@
           padding-bottom: 3rem;
         }
 
-        h1 > a,
-        h2 > a,
-        h3 > a,
-        h4 > a,
-        h5 > a {
-          display: inline-block;
-          color: #0a0a0a;
-        }
-
-        h1:hover > .anchor-link,
-        h2:hover > .anchor-link,
-        h3:hover > .anchor-link,
-        h4:hover > .anchor-link,
-        h5:hover > .anchor-link {
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
-          width: 16px;
-          height: 16px;
-          margin-left: 8px;
-          vertical-align: middle;
-        }
-
         h1 {
           font-weight: 300;
           text-align: center;
@@ -39,7 +18,7 @@
 
         h2 {
           font-size: 2.3rem;
-          margin-top: 1.4rem;
+          margin-top: 2.4rem;
           margin-bottom: 0.6rem;
         }
 
@@ -66,11 +45,36 @@
         }
 
         p + h4 {
-          margin-top: 2.6rem;
+          margin-top: 2rem;
         }
 
         p {
           margin-bottom: 0.2rem;
+        }
+
+        .last-word {
+          white-space: nowrap;
+        }
+
+        h1 > .last-word > .anchor-link,
+        h2 > .last-word > .anchor-link,
+        h3 > .last-word > .anchor-link,
+        h4 > .last-word > .anchor-link,
+        h5 > .last-word > .anchor-link {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+          vertical-align: middle;
+          color: #0a0a0a;
+        }
+
+        h1:hover > .last-word > .anchor-link,
+        h2:hover > .last-word > .anchor-link,
+        h3:hover > .last-word > .anchor-link,
+        h4:hover > .last-word > .anchor-link,
+        h5:hover > .last-word > .anchor-link {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
         }
 
         @media print, screen and (max-width: 40em) {
@@ -107,15 +111,15 @@
         <h1>Sciences et technologie - Perspectives 7B</h1>
 
         <h2 id="sciences-et-technologie-perspectives-7-survol">
-          Sciences et technologie Perspectives 7 Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-7-survol"></a>
+          Sciences et technologie Perspectives 7 <span class="last-word">Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-7-survol"></a></span>
         </h2>
       
         <h3 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h3>
       
         <h4 id="introduction-a-la-resssource-pedagogique-sciences-et-technologie---perspectives-de-duval-education">
-          Introduction à la resssource pédagogique Sciences et technologie - Perspectives de Duval Éducation<a class="anchor-link" href="#introduction-a-la-resssource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a>
+          Introduction à la resssource pédagogique Sciences et technologie - Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#introduction-a-la-resssource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -124,7 +128,7 @@
 
 
         <h4 id="comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressources-perspectives-de-duval-education">
-          Comment les enjeux principaux du curriculum sont abordés par la ressources Perspectives de Duval Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressources-perspectives-de-duval-education"></a>
+          Comment les enjeux principaux du curriculum sont abordés par la ressources Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressources-perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -133,7 +137,7 @@
 
 
         <h4 id="composantes-de-perspectives">
-          Composantes de Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a>
+          Composantes de <span class="last-word">Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -142,7 +146,7 @@
 
 
         <h4 id="presentation-de-la-ressource">
-          Présentation de la ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a>
+          Présentation de la <span class="last-word">ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -155,15 +159,15 @@
 
 
         <h2 id="unite-b-plans-de-lecons">
-          Unité B Plans de leçons<a class="anchor-link" href="#unite-b-plans-de-lecons"></a>
+          Unité B Plans de <span class="last-word">leçons<a class="anchor-link" href="#unite-b-plans-de-lecons"></a></span>
         </h2>
       
         <h3 id="unite-b--introduction">
-          Unité B : Introduction<a class="anchor-link" href="#unite-b--introduction"></a>
+          Unité B : <span class="last-word">Introduction<a class="anchor-link" href="#unite-b--introduction"></a></span>
         </h3>
       
         <h4 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -172,7 +176,7 @@
 
 
         <h4 id="concordance-avec-le-curriculum">
-          Concordance avec le curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a>
+          Concordance avec le <span class="last-word">curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -181,7 +185,7 @@
 
 
         <h4 id="planification-de-lunite">
-          Planification de l'unité<a class="anchor-link" href="#planification-de-lunite"></a>
+          Planification de <span class="last-word">l'unité<a class="anchor-link" href="#planification-de-lunite"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -194,7 +198,7 @@
 
 
         <h4 id="materiel">
-          Matériel<a class="anchor-link" href="#materiel"></a>
+           <span class="last-word">Matériel<a class="anchor-link" href="#materiel"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -203,7 +207,7 @@
 
 
         <h4 id="introduction">
-          Introduction <a class="anchor-link" href="#introduction"></a>
+          Introduction <span class="last-word"><a class="anchor-link" href="#introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -231,11 +235,11 @@
 
 
         <h3 id="chapitre-4-des-ecosystemes-en-sante">
-          Chapitre 4 Des écosystèmes en santé<a class="anchor-link" href="#chapitre-4-des-ecosystemes-en-sante"></a>
+          Chapitre 4 Des écosystèmes en <span class="last-word">santé<a class="anchor-link" href="#chapitre-4-des-ecosystemes-en-sante"></a></span>
         </h3>
       
         <h4 id="chapitre-4--introduction">
-          Chapitre 4 : Introduction<a class="anchor-link" href="#chapitre-4--introduction"></a>
+          Chapitre 4 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-4--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -262,7 +266,7 @@
 
 
         <h4 id="41-quest-ce-quun-ecosysteme">
-          4.1 Qu'est-ce qu'un écosystème?<a class="anchor-link" href="#41-quest-ce-quun-ecosysteme"></a>
+          4.1 Qu'est-ce qu'un <span class="last-word">écosystème?<a class="anchor-link" href="#41-quest-ce-quun-ecosysteme"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -291,7 +295,7 @@
 
 
         <h4 id="42-les-besoins-des-etres-vivants">
-          4.2 Les besoins des êtres vivants<a class="anchor-link" href="#42-les-besoins-des-etres-vivants"></a>
+          4.2 Les besoins des êtres <span class="last-word">vivants<a class="anchor-link" href="#42-les-besoins-des-etres-vivants"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -320,7 +324,7 @@
 
 
         <h4 id="43-realise-une-activite-concois-ton-propre-modele-decosysteme">
-          4.3 Réalise une activité: Conçois ton propre modèle d'écosystème<a class="anchor-link" href="#43-realise-une-activite-concois-ton-propre-modele-decosysteme"></a>
+          4.3 Réalise une activité: Conçois ton propre modèle <span class="last-word">d'écosystème<a class="anchor-link" href="#43-realise-une-activite-concois-ton-propre-modele-decosysteme"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -353,7 +357,7 @@
 
 
         <h4 id="44-les-interactions-entre-les-etres-vivants">
-          4.4 Les interactions entre les êtres vivants<a class="anchor-link" href="#44-les-interactions-entre-les-etres-vivants"></a>
+          4.4 Les interactions entre les êtres <span class="last-word">vivants<a class="anchor-link" href="#44-les-interactions-entre-les-etres-vivants"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -386,7 +390,7 @@
 
 
         <h4 id="geniales-les-sciences-des-murs-vivants">
-          Géniales, les sciences! Des murs vivants<a class="anchor-link" href="#geniales-les-sciences-des-murs-vivants"></a>
+          Géniales, les sciences! Des murs <span class="last-word">vivants<a class="anchor-link" href="#geniales-les-sciences-des-murs-vivants"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -395,7 +399,7 @@
 
 
         <h4 id="45-quelle-place-les-etres-humains-occupent-ils-dans-les-ecosystemes">
-          4.5 Quelle place les êtres humains occupent-ils dans les écosystèmes?<a class="anchor-link" href="#45-quelle-place-les-etres-humains-occupent-ils-dans-les-ecosystemes"></a>
+          4.5 Quelle place les êtres humains occupent-ils dans les <span class="last-word">écosystèmes?<a class="anchor-link" href="#45-quelle-place-les-etres-humains-occupent-ils-dans-les-ecosystemes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -432,7 +436,7 @@
 
 
         <h4 id="46-prononce-toi-sur-un-enjeu--limpact-des-vehicules-sur-lenvironnement">
-          4.6 Prononce-toi sur un enjeu : L'impact des véhicules sur l'environnement<a class="anchor-link" href="#46-prononce-toi-sur-un-enjeu--limpact-des-vehicules-sur-lenvironnement"></a>
+          4.6 Prononce-toi sur un enjeu : L'impact des véhicules sur <span class="last-word">l'environnement<a class="anchor-link" href="#46-prononce-toi-sur-un-enjeu--limpact-des-vehicules-sur-lenvironnement"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -469,7 +473,7 @@
 
 
         <h4 id="chapitre-4-en-resume">
-          Chapitre 4 En résumé<a class="anchor-link" href="#chapitre-4-en-resume"></a>
+          Chapitre 4 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-4-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -482,7 +486,7 @@
 
 
         <h4 id="chapitre-4-revision">
-          Chapitre 4 Révision<a class="anchor-link" href="#chapitre-4-revision"></a>
+          Chapitre 4 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-4-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -504,11 +508,11 @@
 
 
         <h3 id="chapitre-5-les-interactions-dans-les-ecosystemes">
-          Chapitre 5 Les interactions dans les écosystèmes<a class="anchor-link" href="#chapitre-5-les-interactions-dans-les-ecosystemes"></a>
+          Chapitre 5 Les interactions dans les <span class="last-word">écosystèmes<a class="anchor-link" href="#chapitre-5-les-interactions-dans-les-ecosystemes"></a></span>
         </h3>
       
         <h4 id="chapitre-5--introduction">
-          Chapitre 5 : Introduction<a class="anchor-link" href="#chapitre-5--introduction"></a>
+          Chapitre 5 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-5--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -531,7 +535,7 @@
 
 
         <h4 id="51-les-roles-des-organismes-dans-un-ecosysteme">
-          5.1 Les rôles des organismes dans un écosystème<a class="anchor-link" href="#51-les-roles-des-organismes-dans-un-ecosysteme"></a>
+          5.1 Les rôles des organismes dans un <span class="last-word">écosystème<a class="anchor-link" href="#51-les-roles-des-organismes-dans-un-ecosysteme"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -564,7 +568,7 @@
 
 
         <h4 id="52-les-chaines-alimentaires-et-les-reseaux-alimentaires">
-          5.2 Les chaînes alimentaires et les réseaux alimentaires<a class="anchor-link" href="#52-les-chaines-alimentaires-et-les-reseaux-alimentaires"></a>
+          5.2 Les chaînes alimentaires et les réseaux <span class="last-word">alimentaires<a class="anchor-link" href="#52-les-chaines-alimentaires-et-les-reseaux-alimentaires"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -601,7 +605,7 @@
 
 
         <h4 id="sciences-appliquees--bridget-stutchbury-une-ecologiste-reconnue">
-          Sciences appliquées : Bridget Stutchbury, une écologiste reconnue<a class="anchor-link" href="#sciences-appliquees--bridget-stutchbury-une-ecologiste-reconnue"></a>
+          Sciences appliquées : Bridget Stutchbury, une écologiste <span class="last-word">reconnue<a class="anchor-link" href="#sciences-appliquees--bridget-stutchbury-une-ecologiste-reconnue"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -610,7 +614,7 @@
 
 
         <h4 id="53-realise-une-activite--le-grand-reseau-de-la-vie">
-          5.3 Réalise une activité : Le grand réseau de la vie<a class="anchor-link" href="#53-realise-une-activite--le-grand-reseau-de-la-vie"></a>
+          5.3 Réalise une activité : Le grand réseau de la <span class="last-word">vie<a class="anchor-link" href="#53-realise-une-activite--le-grand-reseau-de-la-vie"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -655,7 +659,7 @@
 
 
         <h4 id="54-le-transfert-denergie-dans-un-ecosysteme">
-          5.4 Le transfert d'énergie dans un écosystème<a class="anchor-link" href="#54-le-transfert-denergie-dans-un-ecosysteme"></a>
+          5.4 Le transfert d'énergie dans un <span class="last-word">écosystème<a class="anchor-link" href="#54-le-transfert-denergie-dans-un-ecosysteme"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -688,7 +692,7 @@
 
 
         <h4 id="55-les-cycles-de-la-matiere">
-          5.5 Les cycles de la matière<a class="anchor-link" href="#55-les-cycles-de-la-matiere"></a>
+          5.5 Les cycles de la <span class="last-word">matière<a class="anchor-link" href="#55-les-cycles-de-la-matiere"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -725,7 +729,7 @@
 
 
         <h4 id="56-mene-une-experience--des-dechets-transformes">
-          5.6 Mène une expérience : Des déchets transformés<a class="anchor-link" href="#56-mene-une-experience--des-dechets-transformes"></a>
+          5.6 Mène une expérience : Des déchets <span class="last-word">transformés<a class="anchor-link" href="#56-mene-une-experience--des-dechets-transformes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -754,7 +758,7 @@
 
 
         <h4 id="chapitre-5-en-resume">
-          Chapitre 5 En résumé<a class="anchor-link" href="#chapitre-5-en-resume"></a>
+          Chapitre 5 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-5-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -767,7 +771,7 @@
 
 
         <h4 id="chapitre-5-revision">
-          Chapitre 5 Révision<a class="anchor-link" href="#chapitre-5-revision"></a>
+          Chapitre 5 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-5-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -793,11 +797,11 @@
 
 
         <h3 id="chapitre-6-nature-en-sante-egale-organismes-en-sante">
-          Chapitre 6 Nature en santé égale organismes en santé<a class="anchor-link" href="#chapitre-6-nature-en-sante-egale-organismes-en-sante"></a>
+          Chapitre 6 Nature en santé égale organismes en <span class="last-word">santé<a class="anchor-link" href="#chapitre-6-nature-en-sante-egale-organismes-en-sante"></a></span>
         </h3>
       
         <h4 id="chapitre-6--introduction">
-          Chapitre 6 : Introduction<a class="anchor-link" href="#chapitre-6--introduction"></a>
+          Chapitre 6 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-6--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -820,7 +824,7 @@
 
 
         <h4 id="61-un-processus-naturel--la-succession">
-          6.1 Un processus naturel : La succession<a class="anchor-link" href="#61-un-processus-naturel--la-succession"></a>
+          6.1 Un processus naturel : La <span class="last-word">succession<a class="anchor-link" href="#61-un-processus-naturel--la-succession"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -841,7 +845,7 @@
 
 
         <h4 id="62-limpact-des-etres-humains-sur-les-ecosystemes">
-          6.2 L'impact des êtres humains sur les écosystèmes<a class="anchor-link" href="#62-limpact-des-etres-humains-sur-les-ecosystemes"></a>
+          6.2 L'impact des êtres humains sur les <span class="last-word">écosystèmes<a class="anchor-link" href="#62-limpact-des-etres-humains-sur-les-ecosystemes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -878,7 +882,7 @@
 
 
         <h4 id="63-realise-une-activite-le-probleme-des-especes-envahissantes">
-          6.3 Réalise une activité: Le problème des espèces envahissantes<a class="anchor-link" href="#63-realise-une-activite-le-probleme-des-especes-envahissantes"></a>
+          6.3 Réalise une activité: Le problème des espèces <span class="last-word">envahissantes<a class="anchor-link" href="#63-realise-une-activite-le-probleme-des-especes-envahissantes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -915,7 +919,7 @@
 
 
         <h4 id="64-proteger-lenvironnement">
-          6.4 Protéger l'environnement<a class="anchor-link" href="#64-proteger-lenvironnement"></a>
+          6.4 Protéger <span class="last-word">l'environnement<a class="anchor-link" href="#64-proteger-lenvironnement"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -956,7 +960,7 @@
 
 
         <h4 id="65-les-savoirs-traditionnels-et-lintendance-environnementale">
-          6.5 Les savoirs traditionnels et l'intendance environnementale<a class="anchor-link" href="#65-les-savoirs-traditionnels-et-lintendance-environnementale"></a>
+          6.5 Les savoirs traditionnels et l'intendance <span class="last-word">environnementale<a class="anchor-link" href="#65-les-savoirs-traditionnels-et-lintendance-environnementale"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -989,7 +993,7 @@
 
 
         <h4 id="66-prononce-toi-sur-un-enjeu--des-solutions-possibles-aux-embouteillages">
-          6.6 Prononce-toi sur un enjeu : Des solutions possibles aux embouteillages<a class="anchor-link" href="#66-prononce-toi-sur-un-enjeu--des-solutions-possibles-aux-embouteillages"></a>
+          6.6 Prononce-toi sur un enjeu : Des solutions possibles aux <span class="last-word">embouteillages<a class="anchor-link" href="#66-prononce-toi-sur-un-enjeu--des-solutions-possibles-aux-embouteillages"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1026,7 +1030,7 @@
 
 
         <h4 id="chapitre-6-en-resume">
-          Chapitre 6 En résumé<a class="anchor-link" href="#chapitre-6-en-resume"></a>
+          Chapitre 6 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-6-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1039,7 +1043,7 @@
 
 
         <h4 id="chapitre-6-revison">
-          Chapitre 6 Révison<a class="anchor-link" href="#chapitre-6-revison"></a>
+          Chapitre 6 <span class="last-word">Révison<a class="anchor-link" href="#chapitre-6-revison"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1065,7 +1069,7 @@
 
 
         <h3 id="unite-b-activite-de-fin-dunite-participe-a-la-restauration-de-la-nature-dans-ta-communaute">
-          Unité B Activité de fin d'unité:  Participe à la restauration de la nature dans ta communauté<a class="anchor-link" href="#unite-b-activite-de-fin-dunite-participe-a-la-restauration-de-la-nature-dans-ta-communaute"></a>
+          Unité B Activité de fin d'unité:  Participe à la restauration de la nature dans ta <span class="last-word">communauté<a class="anchor-link" href="#unite-b-activite-de-fin-dunite-participe-a-la-restauration-de-la-nature-dans-ta-communaute"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1103,7 +1107,7 @@
 
 
         <h3 id="unite-b-revision-de-lunite">
-          Unité B Révision de l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a>
+          Unité B Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1129,7 +1133,7 @@
 
 
         <h3 id="unite-b--les-interactions-dans-lenvironnement-reponses">
-          Unité B : Les interactions dans l'environnement Réponses<a class="anchor-link" href="#unite-b--les-interactions-dans-lenvironnement-reponses"></a>
+          Unité B : Les interactions dans l'environnement <span class="last-word">Réponses<a class="anchor-link" href="#unite-b--les-interactions-dans-lenvironnement-reponses"></a></span>
         </h3>
       
 <h5>Guide d'enseignement</h5>
@@ -1140,11 +1144,11 @@
 
 
         <h2 id="documents-reproductibles-de-lunite-b">
-          Documents reproductibles de l'unité B<a class="anchor-link" href="#documents-reproductibles-de-lunite-b"></a>
+          Documents reproductibles de l'unité <span class="last-word">B<a class="anchor-link" href="#documents-reproductibles-de-lunite-b"></a></span>
         </h2>
       
         <h3 id="chapitre-4-des-ecosystemes-en-sante">
-          Chapitre 4 Des écosystèmes en santé<a class="anchor-link" href="#chapitre-4-des-ecosystemes-en-sante"></a>
+          Chapitre 4 Des écosystèmes en <span class="last-word">santé<a class="anchor-link" href="#chapitre-4-des-ecosystemes-en-sante"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1174,7 +1178,7 @@
 
 
         <h3 id="chapitre-5-les-interactions-dans-les-ecosystemes">
-          Chapitre 5 Les interactions dans les écosystèmes<a class="anchor-link" href="#chapitre-5-les-interactions-dans-les-ecosystemes"></a>
+          Chapitre 5 Les interactions dans les <span class="last-word">écosystèmes<a class="anchor-link" href="#chapitre-5-les-interactions-dans-les-ecosystemes"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1200,7 +1204,7 @@
 
 
         <h3 id="chapitre-6-nature-en-sante-egale-organismes-en-sante">
-          Chapitre 6 Nature en santé égale organismes en santé<a class="anchor-link" href="#chapitre-6-nature-en-sante-egale-organismes-en-sante"></a>
+          Chapitre 6 Nature en santé égale organismes en <span class="last-word">santé<a class="anchor-link" href="#chapitre-6-nature-en-sante-egale-organismes-en-sante"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1226,7 +1230,7 @@
 
 
         <h3 id="unite-b">
-          Unité B<a class="anchor-link" href="#unite-b"></a>
+          Unité <span class="last-word">B<a class="anchor-link" href="#unite-b"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1240,7 +1244,7 @@
 
 
         <h3 id="unite-b-documents-reproductibles">
-          Unité B Documents reproductibles <a class="anchor-link" href="#unite-b-documents-reproductibles"></a>
+          Unité B Documents reproductibles <span class="last-word"><a class="anchor-link" href="#unite-b-documents-reproductibles"></a></span>
         </h3>
       
 <h5>Guide d'enseignement</h5>
@@ -1251,11 +1255,11 @@
 
 
         <h2 id="unite-b--pages-du-manuel">
-          Unité B : pages du manuel<a class="anchor-link" href="#unite-b--pages-du-manuel"></a>
+          Unité B : pages du <span class="last-word">manuel<a class="anchor-link" href="#unite-b--pages-du-manuel"></a></span>
         </h2>
       
         <h3 id="unite-b--introduction">
-          Unité B : Introduction<a class="anchor-link" href="#unite-b--introduction"></a>
+          Unité B : <span class="last-word">Introduction<a class="anchor-link" href="#unite-b--introduction"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1271,7 +1275,7 @@
 
 
         <h3 id="chapitre-4-des-ecosystemes-en-sante">
-          Chapitre 4 Des écosystèmes en santé<a class="anchor-link" href="#chapitre-4-des-ecosystemes-en-sante"></a>
+          Chapitre 4 Des écosystèmes en <span class="last-word">santé<a class="anchor-link" href="#chapitre-4-des-ecosystemes-en-sante"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1301,7 +1305,7 @@
 
 
         <h3 id="chapitre-5-les-interactions-dans-les-ecosystemes">
-          Chapitre 5 Les interactions dans les écosystèmes<a class="anchor-link" href="#chapitre-5-les-interactions-dans-les-ecosystemes"></a>
+          Chapitre 5 Les interactions dans les <span class="last-word">écosystèmes<a class="anchor-link" href="#chapitre-5-les-interactions-dans-les-ecosystemes"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1331,7 +1335,7 @@
 
 
         <h3 id="chapitre-6-nature-en-sante-egale-organismes-en-sante">
-          Chapitre 6 Nature en santé égale organismes en santé<a class="anchor-link" href="#chapitre-6-nature-en-sante-egale-organismes-en-sante"></a>
+          Chapitre 6 Nature en santé égale organismes en <span class="last-word">santé<a class="anchor-link" href="#chapitre-6-nature-en-sante-egale-organismes-en-sante"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1359,7 +1363,7 @@
 
 
         <h3 id="unite-b-activite-de-fin-dunite-participe-a-la-restauration-de-la-nature-dans-ta-communaute">
-          Unité B Activité de fin d'unité:  Participe à la restauration de la nature dans ta communauté<a class="anchor-link" href="#unite-b-activite-de-fin-dunite-participe-a-la-restauration-de-la-nature-dans-ta-communaute"></a>
+          Unité B Activité de fin d'unité:  Participe à la restauration de la nature dans ta <span class="last-word">communauté<a class="anchor-link" href="#unite-b-activite-de-fin-dunite-participe-a-la-restauration-de-la-nature-dans-ta-communaute"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1369,7 +1373,7 @@
 
 
         <h3 id="unite-b-revision-de-lunite">
-          Unité B Révision de l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a>
+          Unité B Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-b-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1380,11 +1384,11 @@
 
 
         <h2 id="outils-devaluation">
-          Outils d'évaluation<a class="anchor-link" href="#outils-devaluation"></a>
+          Outils <span class="last-word">d'évaluation<a class="anchor-link" href="#outils-devaluation"></a></span>
         </h2>
       
         <h3 id="grilles-devaluation">
-          Grilles d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a>
+          Grilles <span class="last-word">d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1430,7 +1434,7 @@
 
 
         <h3 id="resumes-de-levaluation">
-          Résumés de l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a>
+          Résumés de <span class="last-word">l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1476,7 +1480,7 @@
 
 
         <h3 id="listes-de-verification-de-lautoevaluation">
-          Listes de vérification de l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a>
+          Listes de vérification de <span class="last-word">l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1510,7 +1514,7 @@
 
 
         <h3 id="tache-de-fin-dunite">
-          Tâche de fin d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a>
+          Tâche de fin <span class="last-word">d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1533,7 +1537,7 @@
 
 
         <h2 id="documents-reproductibles-generaux">
-          Documents reproductibles généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a>
+          Documents reproductibles <span class="last-word">généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a></span>
         </h2>
       
 <h5>Documents reproductibles</h5>

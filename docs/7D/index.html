@@ -9,27 +9,6 @@
           padding-bottom: 3rem;
         }
 
-        h1 > a,
-        h2 > a,
-        h3 > a,
-        h4 > a,
-        h5 > a {
-          display: inline-block;
-          color: #0a0a0a;
-        }
-
-        h1:hover > .anchor-link,
-        h2:hover > .anchor-link,
-        h3:hover > .anchor-link,
-        h4:hover > .anchor-link,
-        h5:hover > .anchor-link {
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
-          width: 16px;
-          height: 16px;
-          margin-left: 8px;
-          vertical-align: middle;
-        }
-
         h1 {
           font-weight: 300;
           text-align: center;
@@ -39,7 +18,7 @@
 
         h2 {
           font-size: 2.3rem;
-          margin-top: 1.4rem;
+          margin-top: 2.4rem;
           margin-bottom: 0.6rem;
         }
 
@@ -66,11 +45,36 @@
         }
 
         p + h4 {
-          margin-top: 2.6rem;
+          margin-top: 2rem;
         }
 
         p {
           margin-bottom: 0.2rem;
+        }
+
+        .last-word {
+          white-space: nowrap;
+        }
+
+        h1 > .last-word > .anchor-link,
+        h2 > .last-word > .anchor-link,
+        h3 > .last-word > .anchor-link,
+        h4 > .last-word > .anchor-link,
+        h5 > .last-word > .anchor-link {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+          vertical-align: middle;
+          color: #0a0a0a;
+        }
+
+        h1:hover > .last-word > .anchor-link,
+        h2:hover > .last-word > .anchor-link,
+        h3:hover > .last-word > .anchor-link,
+        h4:hover > .last-word > .anchor-link,
+        h5:hover > .last-word > .anchor-link {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
         }
 
         @media print, screen and (max-width: 40em) {
@@ -107,15 +111,15 @@
         <h1>Sciences et technologie - Perspectives 7D</h1>
 
         <h2 id="sciences-et-technologie-perspectives-7-survol">
-          Sciences et technologie Perspectives 7 Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-7-survol"></a>
+          Sciences et technologie Perspectives 7 <span class="last-word">Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-7-survol"></a></span>
         </h2>
       
         <h3 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h3>
       
         <h4 id="introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education">
-          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a>
+          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -124,7 +128,7 @@
 
 
         <h4 id="comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education">
-          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a>
+          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -133,7 +137,7 @@
 
 
         <h4 id="composantes-de-perspectives">
-          Composantes de Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a>
+          Composantes de <span class="last-word">Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -142,7 +146,7 @@
 
 
         <h4 id="presentation-de-la-ressource">
-          Présentation de la ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a>
+          Présentation de la <span class="last-word">ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -155,15 +159,15 @@
 
 
         <h2 id="unite-d-plans-de-lecons">
-          Unité D Plans de leçons<a class="anchor-link" href="#unite-d-plans-de-lecons"></a>
+          Unité D Plans de <span class="last-word">leçons<a class="anchor-link" href="#unite-d-plans-de-lecons"></a></span>
         </h2>
       
         <h3 id="unite-d--introduction">
-          Unité D : Introduction<a class="anchor-link" href="#unite-d--introduction"></a>
+          Unité D : <span class="last-word">Introduction<a class="anchor-link" href="#unite-d--introduction"></a></span>
         </h3>
       
         <h4 id="survol">
-          Survol <a class="anchor-link" href="#survol"></a>
+          Survol <span class="last-word"><a class="anchor-link" href="#survol"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -172,7 +176,7 @@
 
 
         <h4 id="concordance-avec-le-curriculum">
-          Concordance avec le curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a>
+          Concordance avec le <span class="last-word">curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -181,7 +185,7 @@
 
 
         <h4 id="planification-de-lunite">
-          Planification de l'unité<a class="anchor-link" href="#planification-de-lunite"></a>
+          Planification de <span class="last-word">l'unité<a class="anchor-link" href="#planification-de-lunite"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -194,7 +198,7 @@
 
 
         <h4 id="materiel">
-          Matériel<a class="anchor-link" href="#materiel"></a>
+           <span class="last-word">Matériel<a class="anchor-link" href="#materiel"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -203,7 +207,7 @@
 
 
         <h4 id="introduction">
-          Introduction <a class="anchor-link" href="#introduction"></a>
+          Introduction <span class="last-word"><a class="anchor-link" href="#introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -239,11 +243,11 @@
 
 
         <h3 id="chapitre-10-les-structures-dans-le-monde">
-          Chapitre 10 Les structures dans le monde<a class="anchor-link" href="#chapitre-10-les-structures-dans-le-monde"></a>
+          Chapitre 10 Les structures dans le <span class="last-word">monde<a class="anchor-link" href="#chapitre-10-les-structures-dans-le-monde"></a></span>
         </h3>
       
         <h4 id="chapitre-10--introduction">
-          Chapitre 10 : Introduction<a class="anchor-link" href="#chapitre-10--introduction"></a>
+          Chapitre 10 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-10--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -266,7 +270,7 @@
 
 
         <h4 id="101-les-structures-qui-nous-entourent">
-          10.1 Les structures qui nous entourent<a class="anchor-link" href="#101-les-structures-qui-nous-entourent"></a>
+          10.1 Les structures qui nous <span class="last-word">entourent<a class="anchor-link" href="#101-les-structures-qui-nous-entourent"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -291,7 +295,7 @@
 
 
         <h4 id="102-les-forces">
-          10.2 Les forces<a class="anchor-link" href="#102-les-forces"></a>
+          10.2 Les <span class="last-word">forces<a class="anchor-link" href="#102-les-forces"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -332,7 +336,7 @@
 
 
         <h4 id="103-la-classification-des-structures">
-          10.3 La classification des structures<a class="anchor-link" href="#103-la-classification-des-structures"></a>
+          10.3 La classification des <span class="last-word">structures<a class="anchor-link" href="#103-la-classification-des-structures"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -357,7 +361,7 @@
 
 
         <h4 id="104-les-forces-externes-et-les-forces-internes">
-          10.4 Les forces externes et les forces internes<a class="anchor-link" href="#104-les-forces-externes-et-les-forces-internes"></a>
+          10.4 Les forces externes et les forces <span class="last-word">internes<a class="anchor-link" href="#104-les-forces-externes-et-les-forces-internes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -394,7 +398,7 @@
 
 
         <h4 id="geniales-les-sciences-leffondrement-du-pont-du-detroit-de-tacoma--un-cas-de-defaillance-structurelle">
-          Géniales, les sciences! L'effondrement du pont du détroit de Tacoma : un cas de défaillance structurelle<a class="anchor-link" href="#geniales-les-sciences-leffondrement-du-pont-du-detroit-de-tacoma--un-cas-de-defaillance-structurelle"></a>
+          Géniales, les sciences! L'effondrement du pont du détroit de Tacoma : un cas de défaillance <span class="last-word">structurelle<a class="anchor-link" href="#geniales-les-sciences-leffondrement-du-pont-du-detroit-de-tacoma--un-cas-de-defaillance-structurelle"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -403,7 +407,7 @@
 
 
         <h4 id="105-realise-une-activite--simule-des-forces-internes">
-          10.5 Réalise une activité : Simule des forces internes<a class="anchor-link" href="#105-realise-une-activite--simule-des-forces-internes"></a>
+          10.5 Réalise une activité : Simule des forces <span class="last-word">internes<a class="anchor-link" href="#105-realise-une-activite--simule-des-forces-internes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -432,7 +436,7 @@
 
 
         <h4 id="chapitre-10-en-resume">
-          Chapitre 10 En résumé<a class="anchor-link" href="#chapitre-10-en-resume"></a>
+          Chapitre 10 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-10-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -445,7 +449,7 @@
 
 
         <h4 id="chapitre-10-revision">
-          Chapitre 10 Révision<a class="anchor-link" href="#chapitre-10-revision"></a>
+          Chapitre 10 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-10-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -467,11 +471,11 @@
 
 
         <h3 id="chapitre-11-la-solidite-et-la-stabilite-des-structures">
-          Chapitre 11 La solidité et la stabilité des structures<a class="anchor-link" href="#chapitre-11-la-solidite-et-la-stabilite-des-structures"></a>
+          Chapitre 11 La solidité et la stabilité des <span class="last-word">structures<a class="anchor-link" href="#chapitre-11-la-solidite-et-la-stabilite-des-structures"></a></span>
         </h3>
       
         <h4 id="chapitre-11--introduction">
-          Chapitre 11 : Introduction<a class="anchor-link" href="#chapitre-11--introduction"></a>
+          Chapitre 11 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-11--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -506,7 +510,7 @@
 
 
         <h4 id="111-la-stabilite-des-structures">
-          11.1 La stabilité des structures<a class="anchor-link" href="#111-la-stabilite-des-structures"></a>
+          11.1 La stabilité des <span class="last-word">structures<a class="anchor-link" href="#111-la-stabilite-des-structures"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -527,7 +531,7 @@
 
 
         <h4 id="112-la-construction-de-structures-solides--les-poutres">
-          11.2 La construction de structures solides : Les poutres<a class="anchor-link" href="#112-la-construction-de-structures-solides--les-poutres"></a>
+          11.2 La construction de structures solides : Les <span class="last-word">poutres<a class="anchor-link" href="#112-la-construction-de-structures-solides--les-poutres"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -560,7 +564,7 @@
 
 
         <h4 id="113-mene-une-experience--les-facteurs-qui-influent-sur-la-capacite-dune-poutre-a-supporter-une-charge">
-          11.3 Mène une expérience : Les facteurs qui influent sur la capacité d'une poutre à supporter une charge<a class="anchor-link" href="#113-mene-une-experience--les-facteurs-qui-influent-sur-la-capacite-dune-poutre-a-supporter-une-charge"></a>
+          11.3 Mène une expérience : Les facteurs qui influent sur la capacité d'une poutre à supporter une <span class="last-word">charge<a class="anchor-link" href="#113-mene-une-experience--les-facteurs-qui-influent-sur-la-capacite-dune-poutre-a-supporter-une-charge"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -589,7 +593,7 @@
 
 
         <h4 id="114-la-construction-de-structures-solides--les-poutres-a-treillis-les-arches-et-les-domes">
-          11.4 La construction de structures solides : Les poutres à treillis, les arches et les dômes<a class="anchor-link" href="#114-la-construction-de-structures-solides--les-poutres-a-treillis-les-arches-et-les-domes"></a>
+          11.4 La construction de structures solides : Les poutres à treillis, les arches et les <span class="last-word">dômes<a class="anchor-link" href="#114-la-construction-de-structures-solides--les-poutres-a-treillis-les-arches-et-les-domes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -618,7 +622,7 @@
 
 
         <h4 id="info-techno--les-nanotubes-de-carbone">
-          Info techno : Les nanotubes de carbone<a class="anchor-link" href="#info-techno--les-nanotubes-de-carbone"></a>
+          Info techno : Les nanotubes de <span class="last-word">carbone<a class="anchor-link" href="#info-techno--les-nanotubes-de-carbone"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -627,7 +631,7 @@
 
 
         <h4 id="115-resous-un-probleme-technologique--concois-un-echafaudage">
-          11.5 Résous un problème technologique : Conçois un échafaudage<a class="anchor-link" href="#115-resous-un-probleme-technologique--concois-un-echafaudage"></a>
+          11.5 Résous un problème technologique : Conçois un <span class="last-word">échafaudage<a class="anchor-link" href="#115-resous-un-probleme-technologique--concois-un-echafaudage"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -656,7 +660,7 @@
 
 
         <h4 id="116-les-defaillances-structurelles">
-          11.6 Les défaillances structurelles<a class="anchor-link" href="#116-les-defaillances-structurelles"></a>
+          11.6 Les défaillances <span class="last-word">structurelles<a class="anchor-link" href="#116-les-defaillances-structurelles"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -677,7 +681,7 @@
 
 
         <h4 id="117-resous-un-probleme-technologique--prevenir-les-defaillances-structurelles">
-          11.7 Résous un problème technologique : Prévenir les défaillances structurelles<a class="anchor-link" href="#117-resous-un-probleme-technologique--prevenir-les-defaillances-structurelles"></a>
+          11.7 Résous un problème technologique : Prévenir les défaillances <span class="last-word">structurelles<a class="anchor-link" href="#117-resous-un-probleme-technologique--prevenir-les-defaillances-structurelles"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -714,7 +718,7 @@
 
 
         <h4 id="chapitre-11-en-resume">
-          Chapitre 11 En résumé<a class="anchor-link" href="#chapitre-11-en-resume"></a>
+          Chapitre 11 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-11-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -727,7 +731,7 @@
 
 
         <h4 id="chapitre-11-revision">
-          Chapitre 11 Révision<a class="anchor-link" href="#chapitre-11-revision"></a>
+          Chapitre 11 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-11-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -753,11 +757,11 @@
 
 
         <h3 id="chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures">
-          Chapitre 12 Les formes, les fonctions et l'esthétisme des structures<a class="anchor-link" href="#chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures"></a>
+          Chapitre 12 Les formes, les fonctions et l'esthétisme des <span class="last-word">structures<a class="anchor-link" href="#chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures"></a></span>
         </h3>
       
         <h4 id="chapitre-12--introduction">
-          Chapitre 12 : Introduction<a class="anchor-link" href="#chapitre-12--introduction"></a>
+          Chapitre 12 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-12--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -784,7 +788,7 @@
 
 
         <h4 id="121-le-processus-de-developpement-dun-produit">
-          12.1 Le processus de développement d'un produit<a class="anchor-link" href="#121-le-processus-de-developpement-dun-produit"></a>
+          12.1 Le processus de développement d'un <span class="last-word">produit<a class="anchor-link" href="#121-le-processus-de-developpement-dun-produit"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -825,7 +829,7 @@
 
 
         <h4 id="122-prononce-toi-sur-un-enjeu--un-ecran-a-villaville">
-          12.2 Prononce-toi sur un enjeu : Un écran à Villaville<a class="anchor-link" href="#122-prononce-toi-sur-un-enjeu--un-ecran-a-villaville"></a>
+          12.2 Prononce-toi sur un enjeu : Un écran à <span class="last-word">Villaville<a class="anchor-link" href="#122-prononce-toi-sur-un-enjeu--un-ecran-a-villaville"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -862,7 +866,7 @@
 
 
         <h4 id="123-la-symetrie-dans-la-forme-et-dans-la-fonction">
-          12.3 La symétrie dans la forme et dans la fonction<a class="anchor-link" href="#123-la-symetrie-dans-la-forme-et-dans-la-fonction"></a>
+          12.3 La symétrie dans la forme et dans la <span class="last-word">fonction<a class="anchor-link" href="#123-la-symetrie-dans-la-forme-et-dans-la-fonction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -883,7 +887,7 @@
 
 
         <h4 id="124-lergonomie--la-conception-de-structures-pour-la-securite-et-le-confort-humains">
-          12.4 L'ergonomie : La conception de structures pour la sécurité et le confort humains<a class="anchor-link" href="#124-lergonomie--la-conception-de-structures-pour-la-securite-et-le-confort-humains"></a>
+          12.4 L'ergonomie : La conception de structures pour la sécurité et le confort <span class="last-word">humains<a class="anchor-link" href="#124-lergonomie--la-conception-de-structures-pour-la-securite-et-le-confort-humains"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -920,7 +924,7 @@
 
 
         <h4 id="125-realise-une-activite--mettre-en-pratique-lergonomie---concois-un-meilleur-clavier">
-          12.5 Réalise une activité : Mettre en pratique l'ergonomie - Conçois un meilleur clavier<a class="anchor-link" href="#125-realise-une-activite--mettre-en-pratique-lergonomie---concois-un-meilleur-clavier"></a>
+          12.5 Réalise une activité : Mettre en pratique l'ergonomie - Conçois un meilleur <span class="last-word">clavier<a class="anchor-link" href="#125-realise-une-activite--mettre-en-pratique-lergonomie---concois-un-meilleur-clavier"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -957,7 +961,7 @@
 
 
         <h4 id="126-la-conception-universelle">
-          12.6 La conception universelle<a class="anchor-link" href="#126-la-conception-universelle"></a>
+          12.6 La conception <span class="last-word">universelle<a class="anchor-link" href="#126-la-conception-universelle"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -990,7 +994,7 @@
 
 
         <h4 id="sciences-appliquees--le-nombre-dor">
-          Sciences appliquées : Le nombre d'or<a class="anchor-link" href="#sciences-appliquees--le-nombre-dor"></a>
+          Sciences appliquées : Le nombre <span class="last-word">d'or<a class="anchor-link" href="#sciences-appliquees--le-nombre-dor"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -999,7 +1003,7 @@
 
 
         <h4 id="chapitre-12-en-resume">
-          Chapitre 12 En résumé<a class="anchor-link" href="#chapitre-12-en-resume"></a>
+          Chapitre 12 En <span class="last-word">résumé<a class="anchor-link" href="#chapitre-12-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1012,7 +1016,7 @@
 
 
         <h4 id="chapitre-12-revision">
-          Chapitre 12 Révision<a class="anchor-link" href="#chapitre-12-revision"></a>
+          Chapitre 12 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-12-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -1038,7 +1042,7 @@
 
 
         <h3 id="unite-d-activite-de-fin-dunite--apprendre-en-samusant">
-          Unité D Activité de fin d'unité : Apprendre en s'amusant<a class="anchor-link" href="#unite-d-activite-de-fin-dunite--apprendre-en-samusant"></a>
+          Unité D Activité de fin d'unité : Apprendre en <span class="last-word">s'amusant<a class="anchor-link" href="#unite-d-activite-de-fin-dunite--apprendre-en-samusant"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1072,7 +1076,7 @@
 
 
         <h3 id="unite-d-revision-de-lunite">
-          Unité D Révision de l'unité<a class="anchor-link" href="#unite-d-revision-de-lunite"></a>
+          Unité D Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-d-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1098,7 +1102,7 @@
 
 
         <h3 id="unite-d-les-structures--formes-et-fonctions-reponses">
-          Unité D Les structures : formes et fonctions Réponses<a class="anchor-link" href="#unite-d-les-structures--formes-et-fonctions-reponses"></a>
+          Unité D Les structures : formes et fonctions <span class="last-word">Réponses<a class="anchor-link" href="#unite-d-les-structures--formes-et-fonctions-reponses"></a></span>
         </h3>
       
 <h5>Guide d'enseignement</h5>
@@ -1109,11 +1113,11 @@
 
 
         <h2 id="unite-d--documents-reproductibles-modifiables">
-          Unité D : Documents reproductibles modifiables<a class="anchor-link" href="#unite-d--documents-reproductibles-modifiables"></a>
+          Unité D : Documents reproductibles <span class="last-word">modifiables<a class="anchor-link" href="#unite-d--documents-reproductibles-modifiables"></a></span>
         </h2>
       
         <h3 id="chapitre-10-les-structures-dans-le-monde">
-          Chapitre 10 Les structures dans le monde<a class="anchor-link" href="#chapitre-10-les-structures-dans-le-monde"></a>
+          Chapitre 10 Les structures dans le <span class="last-word">monde<a class="anchor-link" href="#chapitre-10-les-structures-dans-le-monde"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1139,7 +1143,7 @@
 
 
         <h3 id="chapitre-11-la-solidite-et-la-stabilite-des-structures">
-          Chapitre 11 La solidité et la stabilité des structures<a class="anchor-link" href="#chapitre-11-la-solidite-et-la-stabilite-des-structures"></a>
+          Chapitre 11 La solidité et la stabilité des <span class="last-word">structures<a class="anchor-link" href="#chapitre-11-la-solidite-et-la-stabilite-des-structures"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1165,7 +1169,7 @@
 
 
         <h3 id="chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures">
-          Chapitre 12 Les formes, les fonctions et l'esthétisme des structures<a class="anchor-link" href="#chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures"></a>
+          Chapitre 12 Les formes, les fonctions et l'esthétisme des <span class="last-word">structures<a class="anchor-link" href="#chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1199,7 +1203,7 @@
 
 
         <h3 id="unite-d">
-          Unité D<a class="anchor-link" href="#unite-d"></a>
+          Unité <span class="last-word">D<a class="anchor-link" href="#unite-d"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1213,7 +1217,7 @@
 
 
         <h3 id="unite-d-documents-reproductibles">
-          Unité D Documents reproductibles<a class="anchor-link" href="#unite-d-documents-reproductibles"></a>
+          Unité D Documents <span class="last-word">reproductibles<a class="anchor-link" href="#unite-d-documents-reproductibles"></a></span>
         </h3>
       
 <h5>Guide d'enseignement</h5>
@@ -1224,11 +1228,11 @@
 
 
         <h2 id="unite-d--pages-du-manuel">
-          Unité D : Pages du manuel<a class="anchor-link" href="#unite-d--pages-du-manuel"></a>
+          Unité D : Pages du <span class="last-word">manuel<a class="anchor-link" href="#unite-d--pages-du-manuel"></a></span>
         </h2>
       
         <h3 id="unite-d--introduction">
-          Unité D : Introduction<a class="anchor-link" href="#unite-d--introduction"></a>
+          Unité D : <span class="last-word">Introduction<a class="anchor-link" href="#unite-d--introduction"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1244,7 +1248,7 @@
 
 
         <h3 id="chapitre-10-les-structures-dans-le-monde">
-          Chapitre 10 Les structures dans le monde<a class="anchor-link" href="#chapitre-10-les-structures-dans-le-monde"></a>
+          Chapitre 10 Les structures dans le <span class="last-word">monde<a class="anchor-link" href="#chapitre-10-les-structures-dans-le-monde"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1272,7 +1276,7 @@
 
 
         <h3 id="chapitre-11-la-solidite-et-stabilite-des-structures">
-          Chapitre 11 La solidité et stabilité des structures<a class="anchor-link" href="#chapitre-11-la-solidite-et-stabilite-des-structures"></a>
+          Chapitre 11 La solidité et stabilité des <span class="last-word">structures<a class="anchor-link" href="#chapitre-11-la-solidite-et-stabilite-des-structures"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1304,7 +1308,7 @@
 
 
         <h3 id="chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures">
-          Chapitre 12 Les formes, les fonctions et l'esthétisme des structures<a class="anchor-link" href="#chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures"></a>
+          Chapitre 12 Les formes, les fonctions et l'esthétisme des <span class="last-word">structures<a class="anchor-link" href="#chapitre-12-les-formes-les-fonctions-et-lesthetisme-des-structures"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1334,7 +1338,7 @@
 
 
         <h3 id="unite-d-activite-de-fin-dunite--apprendre-en-samusant">
-          Unité D Activité de fin d'unité : Apprendre en s'amusant<a class="anchor-link" href="#unite-d-activite-de-fin-dunite--apprendre-en-samusant"></a>
+          Unité D Activité de fin d'unité : Apprendre en <span class="last-word">s'amusant<a class="anchor-link" href="#unite-d-activite-de-fin-dunite--apprendre-en-samusant"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1344,7 +1348,7 @@
 
 
         <h3 id="unite-d-revision-de-lunite">
-          Unité D Révision de l'unité<a class="anchor-link" href="#unite-d-revision-de-lunite"></a>
+          Unité D Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-d-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1355,11 +1359,11 @@
 
 
         <h2 id="outils-devaluation">
-          Outils d'évaluation<a class="anchor-link" href="#outils-devaluation"></a>
+          Outils <span class="last-word">d'évaluation<a class="anchor-link" href="#outils-devaluation"></a></span>
         </h2>
       
         <h3 id="grilles-devaluation">
-          Grilles d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a>
+          Grilles <span class="last-word">d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation </h5>
@@ -1405,7 +1409,7 @@
 
 
         <h3 id="resumes-de-levaluation">
-          Résumés de l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a>
+          Résumés de <span class="last-word">l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation </h5>
@@ -1451,7 +1455,7 @@
 
 
         <h3 id="listes-de-verification-de-lautoevaluation">
-          Listes de vérification de l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a>
+          Listes de vérification de <span class="last-word">l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation </h5>
@@ -1485,7 +1489,7 @@
 
 
         <h3 id="tache-de-fin-dunite">
-          Tâche de fin d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a>
+          Tâche de fin <span class="last-word">d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a></span>
         </h3>
       
 <h5>Outils d'évaluation </h5>
@@ -1508,7 +1512,7 @@
 
 
         <h2 id="documents-reproductibles-generaux">
-          Documents reproductibles généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a>
+          Documents reproductibles <span class="last-word">généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a></span>
         </h2>
       
 <h5>Documents reproductibles</h5>

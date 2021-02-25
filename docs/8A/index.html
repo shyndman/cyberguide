@@ -9,27 +9,6 @@
           padding-bottom: 3rem;
         }
 
-        h1 > a,
-        h2 > a,
-        h3 > a,
-        h4 > a,
-        h5 > a {
-          display: inline-block;
-          color: #0a0a0a;
-        }
-
-        h1:hover > .anchor-link,
-        h2:hover > .anchor-link,
-        h3:hover > .anchor-link,
-        h4:hover > .anchor-link,
-        h5:hover > .anchor-link {
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
-          width: 16px;
-          height: 16px;
-          margin-left: 8px;
-          vertical-align: middle;
-        }
-
         h1 {
           font-weight: 300;
           text-align: center;
@@ -39,7 +18,7 @@
 
         h2 {
           font-size: 2.3rem;
-          margin-top: 1.4rem;
+          margin-top: 2.4rem;
           margin-bottom: 0.6rem;
         }
 
@@ -66,11 +45,36 @@
         }
 
         p + h4 {
-          margin-top: 2.6rem;
+          margin-top: 2rem;
         }
 
         p {
           margin-bottom: 0.2rem;
+        }
+
+        .last-word {
+          white-space: nowrap;
+        }
+
+        h1 > .last-word > .anchor-link,
+        h2 > .last-word > .anchor-link,
+        h3 > .last-word > .anchor-link,
+        h4 > .last-word > .anchor-link,
+        h5 > .last-word > .anchor-link {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+          vertical-align: middle;
+          color: #0a0a0a;
+        }
+
+        h1:hover > .last-word > .anchor-link,
+        h2:hover > .last-word > .anchor-link,
+        h3:hover > .last-word > .anchor-link,
+        h4:hover > .last-word > .anchor-link,
+        h5:hover > .last-word > .anchor-link {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'%3E%3C/path%3E%3C/svg%3E");
         }
 
         @media print, screen and (max-width: 40em) {
@@ -107,15 +111,15 @@
         <h1>Sciences et technologie - Perspectives 8A</h1>
 
         <h2 id="sciences-et-technologie-perspectives-8-survol">
-          Sciences et technologie Perspectives 8 Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-8-survol"></a>
+          Sciences et technologie Perspectives 8 <span class="last-word">Survol<a class="anchor-link" href="#sciences-et-technologie-perspectives-8-survol"></a></span>
         </h2>
       
         <h3 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h3>
       
         <h4 id="introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education">
-          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a>
+          Introduction à la ressource pédagogique Sciences et technologie - Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#introduction-a-la-ressource-pedagogique-sciences-et-technologie---perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -124,7 +128,7 @@
 
 
         <h4 id="comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education">
-          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a>
+          Comment les enjeux principaux du curriculum sont abordés par la ressource Perspectives de Duval <span class="last-word">Éducation<a class="anchor-link" href="#comment-les-enjeux-principaux-du-curriculum-sont-abordes-par-la-ressource-perspectives-de-duval-education"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -133,7 +137,7 @@
 
 
         <h4 id="composantes-de-perspectives">
-          Composantes de Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a>
+          Composantes de <span class="last-word">Perspectives<a class="anchor-link" href="#composantes-de-perspectives"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -142,7 +146,7 @@
 
 
         <h4 id="presentation-de-la-ressource">
-          Présentation de la ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a>
+          Présentation de la <span class="last-word">ressource<a class="anchor-link" href="#presentation-de-la-ressource"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -155,15 +159,15 @@
 
 
         <h2 id="unite-a-plans-de-lecons">
-          Unité A Plans de leçons<a class="anchor-link" href="#unite-a-plans-de-lecons"></a>
+          Unité A Plans de <span class="last-word">leçons<a class="anchor-link" href="#unite-a-plans-de-lecons"></a></span>
         </h2>
       
         <h3 id="introduction">
-          Introduction <a class="anchor-link" href="#introduction"></a>
+          Introduction <span class="last-word"><a class="anchor-link" href="#introduction"></a></span>
         </h3>
       
         <h4 id="survol">
-          Survol<a class="anchor-link" href="#survol"></a>
+           <span class="last-word">Survol<a class="anchor-link" href="#survol"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -172,7 +176,7 @@
 
 
         <h4 id="concordance-avec-le-curriculum">
-          Concordance avec le curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a>
+          Concordance avec le <span class="last-word">curriculum<a class="anchor-link" href="#concordance-avec-le-curriculum"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -181,7 +185,7 @@
 
 
         <h4 id="planification-de-lunite">
-          Planification de l'unité<a class="anchor-link" href="#planification-de-lunite"></a>
+          Planification de <span class="last-word">l'unité<a class="anchor-link" href="#planification-de-lunite"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -194,7 +198,7 @@
 
 
         <h4 id="materiel">
-          Matériel<a class="anchor-link" href="#materiel"></a>
+           <span class="last-word">Matériel<a class="anchor-link" href="#materiel"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -203,7 +207,7 @@
 
 
         <h4 id="introduction">
-          Introduction <a class="anchor-link" href="#introduction"></a>
+          Introduction <span class="last-word"><a class="anchor-link" href="#introduction"></a></span>
         </h4>
       
 <h5>Guide d'enseignement</h5>
@@ -223,11 +227,11 @@
 
 
         <h3 id="chapitre-1-a-la-decouverte-des-systemes">
-          Chapitre 1 À la découverte des systèmes<a class="anchor-link" href="#chapitre-1-a-la-decouverte-des-systemes"></a>
+          Chapitre 1 À la découverte des <span class="last-word">systèmes<a class="anchor-link" href="#chapitre-1-a-la-decouverte-des-systemes"></a></span>
         </h3>
       
         <h4 id="chapitre-1--introduction">
-          Chapitre 1 : Introduction<a class="anchor-link" href="#chapitre-1--introduction"></a>
+          Chapitre 1 : <span class="last-word">Introduction<a class="anchor-link" href="#chapitre-1--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -254,7 +258,7 @@
 
 
         <h4 id="11-les-types-de-systemes">
-          1.1 Les types de systèmes <a class="anchor-link" href="#11-les-types-de-systemes"></a>
+          1.1 Les types de systèmes <span class="last-word"><a class="anchor-link" href="#11-les-types-de-systemes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -287,7 +291,7 @@
 
 
         <h4 id="12-les-composantes-des-systemes">
-          1.2 Les composantes des systèmes<a class="anchor-link" href="#12-les-composantes-des-systemes"></a>
+          1.2 Les composantes des <span class="last-word">systèmes<a class="anchor-link" href="#12-les-composantes-des-systemes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -324,7 +328,7 @@
 
 
         <h4 id="info-techno--extraterrestres-elephants-et-gorilles-grimacants---lanimatronique-en-action">
-          Info techno : Extraterrestres, éléphants et gorilles grimaçants - L'animatronique en action <a class="anchor-link" href="#info-techno--extraterrestres-elephants-et-gorilles-grimacants---lanimatronique-en-action"></a>
+          Info techno : Extraterrestres, éléphants et gorilles grimaçants - L'animatronique en action <span class="last-word"><a class="anchor-link" href="#info-techno--extraterrestres-elephants-et-gorilles-grimacants---lanimatronique-en-action"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -333,7 +337,7 @@
 
 
         <h4 id="13-realise-une-activite--examine-des-systemes-physiques">
-          1.3 Réalise une activité : Examine des systèmes physiques<a class="anchor-link" href="#13-realise-une-activite--examine-des-systemes-physiques"></a>
+          1.3 Réalise une activité : Examine des systèmes <span class="last-word">physiques<a class="anchor-link" href="#13-realise-une-activite--examine-des-systemes-physiques"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -370,7 +374,7 @@
 
 
         <h4 id="14-levolution-des-systemes">
-          1.4 L'évolution des systèmes<a class="anchor-link" href="#14-levolution-des-systemes"></a>
+          1.4 L'évolution des <span class="last-word">systèmes<a class="anchor-link" href="#14-levolution-des-systemes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -383,7 +387,7 @@
 
 
         <h4 id="15-prononce-toi-sur-un-enjeu--la-surconsommation">
-          1.5 Prononce-toi sur un enjeu : La surconsommation<a class="anchor-link" href="#15-prononce-toi-sur-un-enjeu--la-surconsommation"></a>
+          1.5 Prononce-toi sur un enjeu : La <span class="last-word">surconsommation<a class="anchor-link" href="#15-prononce-toi-sur-un-enjeu--la-surconsommation"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -428,7 +432,7 @@
 
 
         <h4 id="chapitre-1-en-resume">
-          Chapitre 1 En résumé <a class="anchor-link" href="#chapitre-1-en-resume"></a>
+          Chapitre 1 En résumé <span class="last-word"><a class="anchor-link" href="#chapitre-1-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -441,7 +445,7 @@
 
 
         <h4 id="chapitre-1-revision">
-          Chapitre 1 Révision<a class="anchor-link" href="#chapitre-1-revision"></a>
+          Chapitre 1 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-1-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -463,11 +467,11 @@
 
 
         <h3 id="chapitre-2-se-mettre-au-travail">
-          Chapitre 2 Se mettre au travail <a class="anchor-link" href="#chapitre-2-se-mettre-au-travail"></a>
+          Chapitre 2 Se mettre au travail <span class="last-word"><a class="anchor-link" href="#chapitre-2-se-mettre-au-travail"></a></span>
         </h3>
       
         <h4 id="chapitre-2--introduction">
-          Chapitre 2 : Introduction <a class="anchor-link" href="#chapitre-2--introduction"></a>
+          Chapitre 2 : Introduction <span class="last-word"><a class="anchor-link" href="#chapitre-2--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -490,7 +494,7 @@
 
 
         <h4 id="21-les-systemes-physiques--les-machines-simples">
-          2.1 Les systèmes physiques : les machines simples<a class="anchor-link" href="#21-les-systemes-physiques--les-machines-simples"></a>
+          2.1 Les systèmes physiques : les machines <span class="last-word">simples<a class="anchor-link" href="#21-les-systemes-physiques--les-machines-simples"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -515,7 +519,7 @@
 
 
         <h4 id="22-examine-de-pres-les-differentes-forces">
-          2.2 Examine de près les différentes forces <a class="anchor-link" href="#22-examine-de-pres-les-differentes-forces"></a>
+          2.2 Examine de près les différentes forces <span class="last-word"><a class="anchor-link" href="#22-examine-de-pres-les-differentes-forces"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -548,7 +552,7 @@
 
 
         <h4 id="23-le-gain-mecanique">
-          2.3 Le gain mécanique <a class="anchor-link" href="#23-le-gain-mecanique"></a>
+          2.3 Le gain mécanique <span class="last-word"><a class="anchor-link" href="#23-le-gain-mecanique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -581,7 +585,7 @@
 
 
         <h4 id="24-mene-une-experience--le-gain-mecanique-et-les-poulies">
-          2.4 Mène une expérience : Le gain mécanique et les poulies<a class="anchor-link" href="#24-mene-une-experience--le-gain-mecanique-et-les-poulies"></a>
+          2.4 Mène une expérience : Le gain mécanique et les <span class="last-word">poulies<a class="anchor-link" href="#24-mene-une-experience--le-gain-mecanique-et-les-poulies"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -610,7 +614,7 @@
 
 
         <h4 id="25-le-travail-au-sens-scientifique">
-          2.5 Le travail, au sens scientifique <a class="anchor-link" href="#25-le-travail-au-sens-scientifique"></a>
+          2.5 Le travail, au sens scientifique <span class="last-word"><a class="anchor-link" href="#25-le-travail-au-sens-scientifique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -631,7 +635,7 @@
 
 
         <h4 id="geniales-les-sciences-des-merveilles-microscopiques-et-des-minimachines">
-          Géniales, les sciences! Des merveilles microscopiques et des minimachines<a class="anchor-link" href="#geniales-les-sciences-des-merveilles-microscopiques-et-des-minimachines"></a>
+          Géniales, les sciences! Des merveilles microscopiques et des <span class="last-word">minimachines<a class="anchor-link" href="#geniales-les-sciences-des-merveilles-microscopiques-et-des-minimachines"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -640,7 +644,7 @@
 
 
         <h4 id="26-mene-une-experience--moins-de-travail-ou-un-travail-plus-facile---examine-leffet-de-leviers">
-          2.6 Mène une expérience : Moins de travail ou un travail plus facile? - Examine l'effet de leviers<a class="anchor-link" href="#26-mene-une-experience--moins-de-travail-ou-un-travail-plus-facile---examine-leffet-de-leviers"></a>
+          2.6 Mène une expérience : Moins de travail ou un travail plus facile? - Examine l'effet de <span class="last-word">leviers<a class="anchor-link" href="#26-mene-une-experience--moins-de-travail-ou-un-travail-plus-facile---examine-leffet-de-leviers"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -677,7 +681,7 @@
 
 
         <h4 id="chapitre-2-en-resume">
-          Chapitre 2 En résumé <a class="anchor-link" href="#chapitre-2-en-resume"></a>
+          Chapitre 2 En résumé <span class="last-word"><a class="anchor-link" href="#chapitre-2-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -690,7 +694,7 @@
 
 
         <h4 id="chapitre-2-revision">
-          Chapitre 2  Révision <a class="anchor-link" href="#chapitre-2-revision"></a>
+          Chapitre 2  Révision <span class="last-word"><a class="anchor-link" href="#chapitre-2-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -712,11 +716,11 @@
 
 
         <h3 id="chapitre-3-concevoir-des-systemes-efficaces">
-          Chapitre 3 Concevoir des systèmes efficaces<a class="anchor-link" href="#chapitre-3-concevoir-des-systemes-efficaces"></a>
+          Chapitre 3 Concevoir des systèmes <span class="last-word">efficaces<a class="anchor-link" href="#chapitre-3-concevoir-des-systemes-efficaces"></a></span>
         </h3>
       
         <h4 id="chapitre-3--introduction">
-          Chapitre 3 : Introduction <a class="anchor-link" href="#chapitre-3--introduction"></a>
+          Chapitre 3 : Introduction <span class="last-word"><a class="anchor-link" href="#chapitre-3--introduction"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -747,7 +751,7 @@
 
 
         <h4 id="31-la-perte-denergie">
-          3.1 La perte d'énergie <a class="anchor-link" href="#31-la-perte-denergie"></a>
+          3.1 La perte d'énergie <span class="last-word"><a class="anchor-link" href="#31-la-perte-denergie"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -780,7 +784,7 @@
 
 
         <h4 id="32-lefficacite">
-          3.2 L'efficacité<a class="anchor-link" href="#32-lefficacite"></a>
+          3.2 <span class="last-word">L'efficacité<a class="anchor-link" href="#32-lefficacite"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -813,7 +817,7 @@
 
 
         <h4 id="33-lenergie-le-travail-et-le-rendement-mecanique">
-          3.3 L'énergie, le travail et le rendement mécanique<a class="anchor-link" href="#33-lenergie-le-travail-et-le-rendement-mecanique"></a>
+          3.3 L'énergie, le travail et le rendement <span class="last-word">mécanique<a class="anchor-link" href="#33-lenergie-le-travail-et-le-rendement-mecanique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -834,7 +838,7 @@
 
 
         <h4 id="34-mene-une-experience--explore-le-rendement-mecanique">
-          3.4 Mène une expérience : Explore le rendement mécanique <a class="anchor-link" href="#34-mene-une-experience--explore-le-rendement-mecanique"></a>
+          3.4 Mène une expérience : Explore le rendement mécanique <span class="last-word"><a class="anchor-link" href="#34-mene-une-experience--explore-le-rendement-mecanique"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -863,7 +867,7 @@
 
 
         <h4 id="35-resous-un-probleme-technologique--accroche-toi">
-          3.5 Résous un problème technologique : Accroche-toi!<a class="anchor-link" href="#35-resous-un-probleme-technologique--accroche-toi"></a>
+          3.5 Résous un problème technologique : <span class="last-word">Accroche-toi!<a class="anchor-link" href="#35-resous-un-probleme-technologique--accroche-toi"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -892,7 +896,7 @@
 
 
         <h4 id="36-le-service-a-la-clientele">
-          3.6 Le service à la clientèle <a class="anchor-link" href="#36-le-service-a-la-clientele"></a>
+          3.6 Le service à la clientèle <span class="last-word"><a class="anchor-link" href="#36-le-service-a-la-clientele"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -905,7 +909,7 @@
 
 
         <h4 id="37-prononce-toi-sur-un-enjeu--le-pour-et-le-contre-de-lautomatisation">
-          3.7 Prononce-toi sur un enjeu : Le pour et le contre de l'automatisation<a class="anchor-link" href="#37-prononce-toi-sur-un-enjeu--le-pour-et-le-contre-de-lautomatisation"></a>
+          3.7 Prononce-toi sur un enjeu : Le pour et le contre de <span class="last-word">l'automatisation<a class="anchor-link" href="#37-prononce-toi-sur-un-enjeu--le-pour-et-le-contre-de-lautomatisation"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -942,7 +946,7 @@
 
 
         <h4 id="sciences-appliquees--la-construction-de-maisons-intelligentes">
-          Sciences appliquées : La construction de maisons intelligentes<a class="anchor-link" href="#sciences-appliquees--la-construction-de-maisons-intelligentes"></a>
+          Sciences appliquées : La construction de maisons <span class="last-word">intelligentes<a class="anchor-link" href="#sciences-appliquees--la-construction-de-maisons-intelligentes"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -951,7 +955,7 @@
 
 
         <h4 id="chapitre-3-en-resume">
-          Chapitre 3 En résumé <a class="anchor-link" href="#chapitre-3-en-resume"></a>
+          Chapitre 3 En résumé <span class="last-word"><a class="anchor-link" href="#chapitre-3-en-resume"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -964,7 +968,7 @@
 
 
         <h4 id="chapitre-3-revision">
-          Chapitre 3 Révision<a class="anchor-link" href="#chapitre-3-revision"></a>
+          Chapitre 3 <span class="last-word">Révision<a class="anchor-link" href="#chapitre-3-revision"></a></span>
         </h4>
       
 <h5>Manuel</h5>
@@ -990,7 +994,7 @@
 
 
         <h3 id="unite-a-activite-de-fin-dunite--un-coup-de-main">
-          Unité A Activité de fin d'unité : Un coup de main<a class="anchor-link" href="#unite-a-activite-de-fin-dunite--un-coup-de-main"></a>
+          Unité A Activité de fin d'unité : Un coup de <span class="last-word">main<a class="anchor-link" href="#unite-a-activite-de-fin-dunite--un-coup-de-main"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1032,7 +1036,7 @@
 
 
         <h3 id="unite-a-revision-de-lunite">
-          Unité A Révision de l'unité<a class="anchor-link" href="#unite-a-revision-de-lunite"></a>
+          Unité A Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-a-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1055,11 +1059,11 @@
 
 
         <h2 id="documents-reproductibles-modifiables">
-          Documents reproductibles modifiables<a class="anchor-link" href="#documents-reproductibles-modifiables"></a>
+          Documents reproductibles <span class="last-word">modifiables<a class="anchor-link" href="#documents-reproductibles-modifiables"></a></span>
         </h2>
       
         <h3 id="chapitre-1-a-la-decouverte-des-systemes">
-          Chapitre 1 À la découverte des systèmes<a class="anchor-link" href="#chapitre-1-a-la-decouverte-des-systemes"></a>
+          Chapitre 1 À la découverte des <span class="last-word">systèmes<a class="anchor-link" href="#chapitre-1-a-la-decouverte-des-systemes"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1089,7 +1093,7 @@
 
 
         <h3 id="chapitre-2-se-mettre-au-travail">
-          Chapitre 2 Se mettre au travail <a class="anchor-link" href="#chapitre-2-se-mettre-au-travail"></a>
+          Chapitre 2 Se mettre au travail <span class="last-word"><a class="anchor-link" href="#chapitre-2-se-mettre-au-travail"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1123,7 +1127,7 @@
 
 
         <h3 id="chapitre-3-concevoir-des-systemes-efficaces">
-          Chapitre 3 Concevoir des systèmes efficaces<a class="anchor-link" href="#chapitre-3-concevoir-des-systemes-efficaces"></a>
+          Chapitre 3 Concevoir des systèmes <span class="last-word">efficaces<a class="anchor-link" href="#chapitre-3-concevoir-des-systemes-efficaces"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1153,7 +1157,7 @@
 
 
         <h3 id="unite-a">
-          Unité A<a class="anchor-link" href="#unite-a"></a>
+          Unité <span class="last-word">A<a class="anchor-link" href="#unite-a"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1167,7 +1171,7 @@
 
 
         <h3 id="unite-a--les-systemes-en-action-reponses">
-          Unité A : Les systèmes en action Réponses<a class="anchor-link" href="#unite-a--les-systemes-en-action-reponses"></a>
+          Unité A : Les systèmes en action <span class="last-word">Réponses<a class="anchor-link" href="#unite-a--les-systemes-en-action-reponses"></a></span>
         </h3>
       
 <h5>Documents reproductibles</h5>
@@ -1178,11 +1182,11 @@
 
 
         <h2 id="unite-a--pages-du-manuel">
-          Unité A : Pages du manuel<a class="anchor-link" href="#unite-a--pages-du-manuel"></a>
+          Unité A : Pages du <span class="last-word">manuel<a class="anchor-link" href="#unite-a--pages-du-manuel"></a></span>
         </h2>
       
         <h3 id="unite-a--introduction">
-          Unité A : Introduction <a class="anchor-link" href="#unite-a--introduction"></a>
+          Unité A : Introduction <span class="last-word"><a class="anchor-link" href="#unite-a--introduction"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1198,7 +1202,7 @@
 
 
         <h3 id="chapitre-1-a-la-decouverte-des-systemes">
-          Chapitre 1 À la découverte des systèmes <a class="anchor-link" href="#chapitre-1-a-la-decouverte-des-systemes"></a>
+          Chapitre 1 À la découverte des systèmes <span class="last-word"><a class="anchor-link" href="#chapitre-1-a-la-decouverte-des-systemes"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1226,7 +1230,7 @@
 
 
         <h3 id="chapitre-2-se-mettre-au-travail">
-          Chapitre 2 Se mettre au travail <a class="anchor-link" href="#chapitre-2-se-mettre-au-travail"></a>
+          Chapitre 2 Se mettre au travail <span class="last-word"><a class="anchor-link" href="#chapitre-2-se-mettre-au-travail"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1256,7 +1260,7 @@
 
 
         <h3 id="chapitre-3-concevoir-des-systemes-efficaces">
-          Chapitre 3 Concevoir des systèmes efficaces <a class="anchor-link" href="#chapitre-3-concevoir-des-systemes-efficaces"></a>
+          Chapitre 3 Concevoir des systèmes efficaces <span class="last-word"><a class="anchor-link" href="#chapitre-3-concevoir-des-systemes-efficaces"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1288,7 +1292,7 @@
 
 
         <h3 id="unite-a-activite-de-fin-dunite--un-coup-de-main">
-          Unité A Activité de fin d'unité : Un coup de main<a class="anchor-link" href="#unite-a-activite-de-fin-dunite--un-coup-de-main"></a>
+          Unité A Activité de fin d'unité : Un coup de <span class="last-word">main<a class="anchor-link" href="#unite-a-activite-de-fin-dunite--un-coup-de-main"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1298,7 +1302,7 @@
 
 
         <h3 id="unite-a-revision-de-lunite">
-          Unité A Révision de l'unité<a class="anchor-link" href="#unite-a-revision-de-lunite"></a>
+          Unité A Révision de <span class="last-word">l'unité<a class="anchor-link" href="#unite-a-revision-de-lunite"></a></span>
         </h3>
       
 <h5>Manuel</h5>
@@ -1309,11 +1313,11 @@
 
 
         <h2 id="outils-devaluation">
-          Outils d'évaluation<a class="anchor-link" href="#outils-devaluation"></a>
+          Outils <span class="last-word">d'évaluation<a class="anchor-link" href="#outils-devaluation"></a></span>
         </h2>
       
         <h3 id="grilles-devaluation">
-          Grilles d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a>
+          Grilles <span class="last-word">d'évaluation<a class="anchor-link" href="#grilles-devaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1359,7 +1363,7 @@
 
 
         <h3 id="resumes-de-levaluation">
-          Résumés de l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a>
+          Résumés de <span class="last-word">l'évaluation<a class="anchor-link" href="#resumes-de-levaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1405,7 +1409,7 @@
 
 
         <h3 id="listes-de-verification-de-lautoevaluation">
-          Listes de vérification de l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a>
+          Listes de vérification de <span class="last-word">l'autoévaluation<a class="anchor-link" href="#listes-de-verification-de-lautoevaluation"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1439,7 +1443,7 @@
 
 
         <h3 id="tache-de-fin-dunite">
-          Tâche de fin d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a>
+          Tâche de fin <span class="last-word">d'unité<a class="anchor-link" href="#tache-de-fin-dunite"></a></span>
         </h3>
       
 <h5>Outils d'évaluation</h5>
@@ -1462,7 +1466,7 @@
 
 
         <h2 id="documents-reproductibles-generaux">
-          Documents reproductibles généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a>
+          Documents reproductibles <span class="last-word">généraux<a class="anchor-link" href="#documents-reproductibles-generaux"></a></span>
         </h2>
       
 <h5>Documents reproductibles</h5>
