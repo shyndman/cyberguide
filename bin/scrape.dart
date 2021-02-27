@@ -74,6 +74,7 @@ const clean = false;
 final http = HttpClient();
 const outputDirName = 'docs';
 final xmlPattern = RegExp(r'^.*\.xml$', multiLine: true);
+const nonBreakingSpace = '\u{a0}';
 
 void main(List<String> arguments) async {
   final buildDir = Directory('./$outputDirName');
@@ -245,7 +246,7 @@ Future<DocNode> parseDocTree(
       final labelElement = elements[0];
       final contentElement = elements[1];
 
-      final label = labelElement.getAttribute('label')!.replaceAll(' ', ' ');
+      final label = labelForElement(labelElement);
       final docNode = elementsToDocNodes[labelElement] =
           elementsToDocNodes[contentElement] = DocNode(label);
 
@@ -264,15 +265,14 @@ Future<DocNode> parseDocTree(
   for (final contentTypeElement in contentDoc.findAllElements('type')) {
     final parentDocNode = elementsToDocNodes[contentTypeElement.parentElement]!;
 
-    final typeDocNode =
-        DocNode(contentTypeElement.getAttribute('label')!.replaceAll(' ', ' '));
+    final typeDocNode = DocNode(labelForElement(contentTypeElement));
     parentDocNode.addChild(typeDocNode);
 
     for (final contentElement
         in contentTypeElement.descendants.whereType<XmlElement>()) {
       final contentUrl = contentElement.getAttribute('url');
       final contentDocNode = DocNode(
-        contentElement.getAttribute('label')!.replaceAll(' ', ' '),
+        labelForElement(contentElement),
         url: contentUrl != null
             ? swfUrl.replace(
                 path: '$swfDir/${contentUrl.replaceAll(r'\', '/')}',
@@ -286,6 +286,13 @@ Future<DocNode> parseDocTree(
   final rootDocNode = DocNode(labelsDoc.rootElement.getAttribute('label')!);
   rootDocNodes.forEach(rootDocNode.addChild);
   return rootDocNode;
+}
+
+String labelForElement(XmlElement element) {
+  return element
+      .getAttribute('label')!
+      // Replace non-breaking space with space
+      .replaceAll(nonBreakingSpace, ' ');
 }
 
 Future<void> writeUnitPackage(String unit, DocNode rootDocNode) async {
